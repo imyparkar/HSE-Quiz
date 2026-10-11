@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1b2a">
+<title>Live HSE Quiz – Join</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5b301'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='900' text-anchor='middle' fill='%231a1300'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="phone">
+  <div class="top">
+    <div class="brand"><div class="mark">HSE</div><div>Live HSE Quiz</div></div>
+    <span class="chip"><span class="conn off" id="conn"></span> <span id="roomLbl">—</span></span>
+  </div>
+
+  <!-- Join -->
+  <section id="p-join" data-screen>
+    <h1>Join the quiz</h1>
+    <div class="muted">Enter your name as you want it to appear on the leaderboard.</div>
+    <form id="joinForm">
+      <div class="field" id="codeField">
+        <label for="code">Room code</label>
+        <input id="code" maxlength="6" autocomplete="off" autocapitalize="characters" placeholder="e.g. K7Q2MX">
+      </div>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" maxlength="24" autocomplete="name" placeholder="e.g. Ahmed Al-Ali" required>
+      </div>
+      <button class="btn" type="submit" id="joinBtn">Log in &amp; join</button>
+    </form>
+  </section>
+
+  <!-- Lobby -->
+  <section id="p-lobby" data-screen class="center hidden">
+    <div class="big-emoji">✅</div>
+    <h1>You're in, <span id="meName"></span>!</h1>
+    <p class="muted">Watch the main screen. The first question will appear here when the presenter starts.</p>
+    <div class="stat"><div><b id="lobbyCount">1</b>joined</div><div><b>40 s</b>per question</div></div>
+  </section>
+
+  <!-- Question -->
+  <section id="p-question" data-screen class="hidden">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <span class="chip">Q <b id="pqNum">1</b>/<b id="pqTotal">20</b></span>
+      <span class="chip" id="pqRef"></span>
+      <span class="chip"><b id="pTime">40</b>s</span>
+    </div>
+    <div class="timebar" id="pBar" style="margin-top:12px"><div></div></div>
+    <div class="pq" id="pqText"></div>
+    <div class="pbtns" id="pbtns"></div>
+    <div id="pStatus"></div>
+  </section>
+
+  <!-- Final -->
+  <section id="p-final" data-screen class="center hidden">
+    <div class="big-emoji" id="finalEmoji">🏁</div>
+    <h1 id="finalTitle">Quiz complete</h1>
+    <div class="stat"><div><b id="fRank">–</b>your rank</div><div><b id="fScore">0</b>points</div></div>
+    <div class="card" style="padding:14px;text-align:left">
+      <div class="muted" style="margin-bottom:8px">Winners</div>
+      <div class="rows" id="fPodium"></div>
+    </div>
+  </section>
+
+  <div class="muted center" style="margin-top:auto;padding-top:24px;font-size:13px" id="footer"></div>
+</main>
+<script src="common.js"></script>
+<script src="play.js"></script>
+</body>
+</html>
