@@ -1,0 +1,16 @@
+{
+  // Cloudflare Workers configuration for Live HSE Quiz
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "live-hse-quiz",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "QUIZ_ROOM", "class_name": "QuizRoom" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["QuizRoom"] }],
+  "observability": { "enabled": true }
+}

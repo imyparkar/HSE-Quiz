@@ -1,0 +1,2802 @@
+[
+ {
+  "id": "Q001",
+  "ref": "KOC.SA.002",
+  "topic": "Scaffolding",
+  "q": "According to KOC.SA.002, how often must an in-service scaffold be re-inspected by an authorized Scaffolding Inspector, whether or not it has been used?",
+  "options": [
+   "Every 7 days",
+   "Every 14 days",
+   "Every 30 days",
+   "Only after alterations or bad weather"
+  ],
+  "answer": 0,
+  "source": "Cl. 4.1.3 / 5.1.6: inspection before first use, after alteration, after adverse weather and every 7 days thereafter."
+ },
+ {
+  "id": "Q002",
+  "ref": "KOC.SA.002",
+  "topic": "Scaffolding",
+  "q": "Above what wind speed does KOC.SA.002 prohibit work on or from scaffolds?",
+  "options": [
+   "40 km/h",
+   "50 km/h",
+   "65 km/h",
+   "80 km/h"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.3 c): work on scaffolds is prohibited during storms or high winds (wind speed more than 65 km/h)."
+ },
+ {
+  "id": "Q003",
+  "ref": "KOC.SA.002",
+  "topic": "Scaffolding",
+  "q": "An elevated scaffold work area requires at least two means of exit when the horizontal travel distance to the nearest exit ladder exceeds:",
+  "options": [
+   "10 m",
+   "15 m",
+   "20 m",
+   "30 m"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.3 f): where horizontal travel distance to the nearest exit exceeds 15 m (50 ft), at least two means of exit are required."
+ },
+ {
+  "id": "Q004",
+  "ref": "KOC.SA.002",
+  "topic": "Portable Ladders",
+  "q": "A worker is setting up a portable ladder against a structure. Which set-up ratio meets the KOC.SA.002 requirement of approximately 76 degrees?",
+  "options": [
+   "1 m out for every 2 m up",
+   "1 m out for every 3 m up",
+   "1 m out for every 4 m up",
+   "1 m out for every 6 m up"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.2 h): ladders shall be set at an angle of 76 degrees (1 m out for 4 m up)."
+ },
+ {
+  "id": "Q005",
+  "ref": "KOC.SA.002",
+  "topic": "Portable Ladders",
+  "q": "Where no adequate handhold is provided at the landing, a portable ladder must extend above the landing place by at least:",
+  "options": [
+   "0.60 m",
+   "0.90 m",
+   "1.05 m",
+   "1.50 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.2 i): the ladder must rise at least 1.05 m (3.5 ft) above the landing place."
+ },
+ {
+  "id": "Q006",
+  "ref": "KOC.SA.002",
+  "topic": "Scaffolding",
+  "q": "Without a supporting risk assessment, what is the minimum distance a scaffold may be erected from an existing excavation?",
+  "options": [
+   "1 m",
+   "1.5 m",
+   "2 m",
+   "3 m"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.1.3 aa): no scaffold shall be erected less than 3 m from an existing excavation; a shorter distance only based on a risk assessment."
+ },
+ {
+  "id": "Q007",
+  "ref": "KOC.SA.002",
+  "topic": "Scaffolding",
+  "q": "What minimum experience does KOC.SA.002 require for a Scaffolding Supervisor, in addition to certified erection and dismantling training?",
+  "options": [
+   "3 years in scaffolding, with no supervisory requirement",
+   "5 years in scaffolding, including at least 1 year as a supervisor",
+   "5 years in scaffolding, including at least 3 years as a supervisor",
+   "10 years in scaffolding, including at least 2 years as a supervisor"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.2 b): minimum 5 years' experience in scaffolding jobs, of which at least one year in a supervisory role."
+ },
+ {
+  "id": "Q008",
+  "ref": "KOC.SA.002",
+  "topic": "Stepladders",
+  "q": "What is the maximum permitted height of a portable stepladder under KOC.SA.002?",
+  "options": [
+   "3.0 m (10 ft)",
+   "4.5 m (15 ft)",
+   "6.1 m (20 ft)",
+   "9.0 m (30 ft)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.3 f): portable stepladders shall not exceed 20 ft (6.1 m) in height."
+ },
+ {
+  "id": "Q009",
+  "ref": "KOC.SA.004",
+  "topic": "Permit to Work",
+  "q": "What is the maximum validity of a Hot, Cold or Radiography Work Permit from its date of issue, subject to renewal by the Permit Issuer?",
+  "options": [
+   "One shift (12 hours)",
+   "3 consecutive days",
+   "7 consecutive days",
+   "14 consecutive days"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: Hot / Cold / Radiography permits are valid for a maximum of seven consecutive days from the date of issue, subject to renewal."
+ },
+ {
+  "id": "Q010",
+  "ref": "KOC.SA.004",
+  "topic": "Permit to Work",
+  "q": "A Work Permit endorsement or renewal remains valid for a maximum of:",
+  "options": [
+   "One shift (12 hours)",
+   "24 hours",
+   "48 hours",
+   "The full permit validity period"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.8 e): each endorsement / renewal is valid for a maximum of one shift (12 hours) or as recorded by the Permit Issuer."
+ },
+ {
+  "id": "Q011",
+  "ref": "KOC.SA.004",
+  "topic": "Gas Testing for PTW",
+  "q": "A worksite was gas tested and certified gas free at 07:00, but the job could not start until 09:30. What must happen before work starts?",
+  "options": [
+   "Work may start because the certificate is valid for the shift",
+   "Work may start if the Worksite Supervisor signs the permit",
+   "A new gas test must be carried out",
+   "Work may start if a fire watch is posted"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.15 b): if work has not started within 2 hours of a gas test, the gas free certification becomes invalid and a new test is required."
+ },
+ {
+  "id": "Q012",
+  "ref": "KOC.SA.004",
+  "topic": "Hot Work",
+  "q": "What is the maximum flammable gas reading permitted for authorizing Hot Work under the KOC Permit to Work Procedure?",
+  "options": [
+   "0% LEL",
+   "5% LEL",
+   "10% LEL",
+   "20% LEL"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.13.2 / 5.15 g): the maximum LEL permissible for authorized Hot Work is 0% LEL."
+ },
+ {
+  "id": "Q013",
+  "ref": "KOC.SA.004",
+  "topic": "Cold Work",
+  "q": "During cold work on a flowline, 0% LEL cannot be achieved despite depressurizing, venting and purging. Under what condition may the work proceed?",
+  "options": [
+   "Below 10% LEL, continuously monitored, with an approved Method Statement",
+   "Below 20% LEL, with all workers wearing breathing apparatus sets",
+   "Below 25% LEL, with a fire watch and extinguishers posted at site",
+   "Any LEL reading, with verbal approval from the Permit Issuer"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.13.1 c): work may be carried out ensuring LEL does not exceed 10% under continuous monitoring; a reviewed and approved Method Statement is mandatory."
+ },
+ {
+  "id": "Q014",
+  "ref": "KOC.SA.004",
+  "topic": "Permit to Work",
+  "q": "What is the maximum period a Work Permit can remain suspended before it must be cancelled and signed off?",
+  "options": [
+   "24 hours, after which it is cancelled",
+   "3 days, after which it is cancelled",
+   "5 days, or permit expiry if sooner",
+   "7 days, regardless of permit expiry"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.11: a Work Permit can be suspended for a maximum of 5 days or until expiry of its validity, whichever is sooner."
+ },
+ {
+  "id": "Q015",
+  "ref": "KOC.SA.004",
+  "topic": "Hot Work Fire Protection",
+  "q": "What is the minimum fire extinguisher provision for each Hot Work location under KOC.SA.004?",
+  "options": [
+   "One extinguisher within 15 m",
+   "Two extinguishers within 7.5 m",
+   "Two extinguishers within 15 m",
+   "Three extinguishers within 10 m"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.16 a): a minimum of two fire extinguishers (9 kg Monnex or 12 kg DCP) within 7.5 m of each hot work location."
+ },
+ {
+  "id": "Q016",
+  "ref": "KOC.SA.004",
+  "topic": "Excavation Notification",
+  "q": "Unless otherwise stated in the permit, how long is an Excavation Notification valid from the date the Asset Owner signs it?",
+  "options": [
+   "7 days",
+   "30 days",
+   "60 days",
+   "90 days"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.13.6 e): the Excavation Notification is valid for 90 days from the date of issuance."
+ },
+ {
+  "id": "Q017",
+  "ref": "KOC.SA.004",
+  "topic": "PTW Competency",
+  "q": "What is the minimum passing score for the PTW qualifying written test for Permit Issuers, Permit Applicants and Worksite Supervisors?",
+  "options": [
+   "60%",
+   "70%",
+   "75%",
+   "80%"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.7 b): the passing score for the PTW qualifying test shall be a minimum of 70%."
+ },
+ {
+  "id": "Q018",
+  "ref": "KOC.SA.004",
+  "topic": "Excavation Notification",
+  "q": "Under KOC.SA.004, mechanical excavation is NOT allowed within what radius of any underground facility?",
+  "options": [
+   "1 m",
+   "2 m",
+   "3 m",
+   "5 m"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.13.6 a): mechanical excavation is not allowed inside the plant or facility or within 5 m radius of any underground facilities."
+ },
+ {
+  "id": "Q019",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "During a routine check, an SCBA breathing air cylinder gauge shows it has dropped below full charge. At what point does KOC.SA.005 require it to be sent for recharging?",
+  "options": [
+   "When pressure falls to 90% of the specified pressure",
+   "When pressure falls to 75% of the specified pressure",
+   "When pressure falls to 50% of the specified pressure",
+   "When the low-pressure alarm sounds"
+  ],
+  "answer": 0,
+  "source": "Cl. 4.2 / 5.4.3: cylinder pressure must not be less than 90% of full capacity; refill when pressure drops to 90% of specified pressure."
+ },
+ {
+  "id": "Q020",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "When checking an SCBA, the cylinder valve is closed slowly to test the low-pressure warning alarm. At approximately what level of cylinder capacity should the alarm sound?",
+  "options": [
+   "10%",
+   "25%",
+   "50%",
+   "90%"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4.5 C: verify activation of the low pressure alarm (to sound at approximately 25% of cylinder capacity)."
+ },
+ {
+  "id": "Q021",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "What is the maximum validity of an RPE 'Authorized User Card' issued by the Controlling Team?",
+  "options": [
+   "6 months",
+   "12 months",
+   "24 months",
+   "36 months"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4.4: validity of the Authorized User Card shall not exceed 12 months and must be within the medical examination validity."
+ },
+ {
+  "id": "Q022",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "What periodic hydrostatic test intervals does KOC.SA.005 specify for SCBA breathing air cylinders?",
+  "options": [
+   "Steel every 3 years; composite every 5 years",
+   "Steel every 5 years; composite every 3 years",
+   "Steel and composite both every 5 years",
+   "Steel and composite both every 10 years"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4.5 C: verify SCBA cylinder is current on hydrostatic test (5 years for steel, 3 years for composite cylinders)."
+ },
+ {
+  "id": "Q023",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "A worker passes a quantitative fit test with a full-face respirator. Which requirement then applies on the job?",
+  "options": [
+   "Any model from the same manufacturer may be used",
+   "Any size of the same model may be used",
+   "The exact same make, model, style and size must be used",
+   "Any tight-fitting respirator with the same APF may be used"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: after passing a fit test, the user must use the exact same make, model, style and size of respirator; fit testing is at least annual."
+ },
+ {
+  "id": "Q024",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "What minimum specification does KOC.SA.005 set for SCBA used by emergency services (Fire Group)?",
+  "options": [
+   "Negative pressure type, minimum 30 minutes duration",
+   "Positive pressure type, minimum 30 minutes duration",
+   "Positive pressure type, minimum 45 minutes duration",
+   "Positive pressure type, minimum 60 minutes duration"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.1 Note 1: SCBA for emergency services shall be positive pressure type with minimum 45 minutes duration, conforming to NFPA 1981."
+ },
+ {
+  "id": "Q025",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "An air-purifying respirator filter has been removed from its sealed packaging but rarely used. When must it be replaced, regardless of use?",
+  "options": [
+   "After 1 month",
+   "After 3 months",
+   "After 6 months",
+   "After 12 months"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4.5 B: a filter once opened from the seal must be replaced after 6 months regardless of its use."
+ },
+ {
+  "id": "Q026",
+  "ref": "KOC.SA.005",
+  "topic": "Respiratory Protection",
+  "q": "How often, at a minimum, must the output air quality of a breathing air compressor be checked?",
+  "options": [
+   "Every month, and after each filter change",
+   "Every 3 months, and after each filter change",
+   "Every 6 months, and after each filter change",
+   "Every 12 months, and after each filter change"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.9: periodic checks of compressor output air quality at least once every 3 months and after each filter change."
+ },
+ {
+  "id": "Q027",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "Which set of gas test results permits confined space entry WITHOUT respiratory protection under KOC.SA.007 Table 1?",
+  "options": [
+   "O2 19.5–23.5%, flammables < 10% LEL, H2S < 10 ppm",
+   "O2 18–23.5%, flammables < 20% LEL, H2S < 10 ppm",
+   "O2 19.5–23.5%, flammables < 25% LEL, H2S < 20 ppm",
+   "O2 16–21%, flammables < 10% LEL, H2S < 100 ppm"
+  ],
+  "answer": 0,
+  "source": "Table 1: entry without respiratory protection when O2 is 19.5–23.5%, flammables < 10% LEL and H2S < 10 ppm."
+ },
+ {
+  "id": "Q028",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "Gas testing of a vessel shows 15% oxygen. According to KOC.SA.007 Table 1, what is the correct action?",
+  "options": [
+   "Entry permitted with an air-purifying respirator",
+   "Entry permitted with forced ventilation only",
+   "Entry permitted with SCBA and continuous monitoring",
+   "No entry, except in an emergency or for rescue"
+  ],
+  "answer": 3,
+  "source": "Table 1: oxygen content less than 16% (or H2S > 100 ppm, or flammables 50% LEL or above) = NO ENTRY except emergency or rescue."
+ },
+ {
+  "id": "Q029",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "The initial confined space gas test was done at 08:00 but entry is delayed until 09:15. What does KOC.SA.007 require?",
+  "options": [
+   "Entry may proceed because the test is valid for the shift",
+   "A follow-up gas test by the Worksite Supervisor before entry",
+   "A new Confined Space Entry Certificate must be raised",
+   "Entry may proceed if entrants wear personal H2S monitors"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3: entry is to take place within one hour of the initial gas test; otherwise a follow-up gas test by the Worksite Supervisor is required before entry."
+ },
+ {
+  "id": "Q030",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "Where periodic (rather than continuous) gas monitoring is used during a confined space entry, the interval between tests shall not exceed:",
+  "options": [
+   "30 minutes",
+   "1 hour",
+   "2 hours",
+   "4 hours"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.13: the periodic monitoring of gas shall not exceed a two-hour period."
+ },
+ {
+  "id": "Q031",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "How frequently does KOC.SA.007 require personnel working inside a vessel or tank to be given a rest period, unless conditions require more frequent breaks?",
+  "options": [
+   "Every 30 minutes",
+   "Every 45 minutes",
+   "Every 60 minutes",
+   "Every 2 hours"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.11: personnel working inside the vessel / tank will be given a rest period at each 30 minute interval, or more frequently."
+ },
+ {
+  "id": "Q032",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Entry",
+  "q": "Inside a KOC hydrocarbon facility, an excavation is classified as a confined space when its depth exceeds:",
+  "options": [
+   "0.6 m",
+   "1.0 m",
+   "1.2 m",
+   "1.5 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 c): excavation with depth more than 1.2 m inside hydrocarbon facilities is a confined space."
+ },
+ {
+  "id": "Q033",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Rescue",
+  "q": "An entrant collapses inside a vessel. What is the correct immediate action for the standby person who is not trained in search and rescue?",
+  "options": [
+   "Enter at once wearing an escape set and pull the entrant out",
+   "Summon aid via the Control Room and stay outside until relief arrives",
+   "Send another entrant inside to assist the casualty to the manway",
+   "Lower a spare SCBA set to the casualty and wait at the manway"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.4 Note / 5.11: the standby person must not enter until relief arrives; he must summon aid immediately via the Control Room."
+ },
+ {
+  "id": "Q034",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Ventilation",
+  "q": "Which of the following must NEVER be used to ventilate a confined space?",
+  "options": [
+   "A pneumatically driven air mover",
+   "Natural draft air purging",
+   "Compressed oxygen or instrument air",
+   "An air-driven extraction fan"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.5: compressed oxygen or instrument air shall never be used to ventilate a confined space."
+ },
+ {
+  "id": "Q035",
+  "ref": "KOC.SA.007",
+  "topic": "Confined Space Lighting",
+  "q": "A vessel has been certified gas free but flammable residues may remain. If extra-low-voltage portable lighting is used, what is its maximum voltage under KOC.SA.007?",
+  "options": [
+   "12 V AC",
+   "25 V AC",
+   "110 V AC",
+   "240 V AC"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6: such spaces may be illuminated by extra low voltage (25 V AC) portable lighting approved for Zone 1; transformers never taken inside."
+ },
+ {
+  "id": "Q036",
+  "ref": "KOC.SA.012",
+  "topic": "Abrasive Wheels",
+  "q": "On a bench-mounted grinder, what is the maximum gap permitted between the work rest and the abrasive wheel?",
+  "options": [
+   "1/8 inch",
+   "1/4 inch",
+   "1/2 inch",
+   "1 inch"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.2.1: work rest adjusted as close to the wheel as possible at a maximum distance of 1/4 inch."
+ },
+ {
+  "id": "Q037",
+  "ref": "KOC.SA.012",
+  "topic": "Abrasive Wheels",
+  "q": "The 'ring test' described in KOC.SA.012 for checking an abrasive wheel for cracks is applicable to which type of wheel?",
+  "options": [
+   "Organic (resin) bonded wheels",
+   "Small wheels of 100 mm diameter or less",
+   "Vitrified bonded wheels",
+   "Plate-mounted and segment wheels"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.2.3 / 5.1.2.5: the ring test is used only for vitrified bonded wheels; it is not practicable for small, mounted, segment or plate-mounted wheels."
+ },
+ {
+  "id": "Q038",
+  "ref": "KOC.SA.012",
+  "topic": "Abrasive Wheels",
+  "q": "After a new abrasive wheel is mounted, how long should it be allowed to run free, with users standing clear, before use?",
+  "options": [
+   "About 10 seconds",
+   "About 30 seconds",
+   "About 60 seconds",
+   "About 5 minutes"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.2.3: new wheels should be allowed to run free for about 60 seconds; users should stand clear."
+ },
+ {
+  "id": "Q039",
+  "ref": "KOC.SA.012",
+  "topic": "Abrasive Wheels",
+  "q": "A technician is selecting a cutting disc for a portable grinder. Which speed rating requirement must the disc meet?",
+  "options": [
+   "Rated at or above the RPM of the grinder",
+   "Rated at 75% of the grinder RPM",
+   "Rated below the grinder RPM to reduce vibration",
+   "Any rating, provided a speed governor is fitted"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.1.2.1: ensure speed of the wheel is compatible with the machine, i.e. use a wheel or disc rated at or above the RPM of the grinder."
+ },
+ {
+  "id": "Q040",
+  "ref": "KOC.SA.012",
+  "topic": "Pneumatic Equipment",
+  "q": "Under KOC.SA.012, a mobile air compressor may be deployed in a Zone 2 hazardous area only:",
+  "options": [
+   "Under a Cold Work Permit with continuous gas monitoring",
+   "Under a Hot Work Permit, if suitable for the area classification",
+   "Under a Vehicle Entry Permit, if a spark arrestor is fitted",
+   "It is never permitted in a Zone 2 area"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.2: mobile compressors are not permitted in Zone 0 & 1; in Zone 2 they must be covered by an authorized Hot Work Permit, subject to suitability."
+ },
+ {
+  "id": "Q041",
+  "ref": "KOC.SA.012",
+  "topic": "Pneumatic Equipment",
+  "q": "Which method of connecting a pneumatic tool to its high-pressure air hose is acceptable under KOC.SA.012?",
+  "options": [
+   "Screw-adjusted 'Jubilee' clip, tightened with a screwdriver",
+   "Crowfoot coupling with retaining pin/clip and whip check",
+   "Wire-twisted joint secured with heavy-duty insulation tape",
+   "Push-fit coupling, with the hose tied to the tool handle"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.1 / 5.2.3: purpose-made connections (e.g. crowfoot) with retaining pin/clip and whip; 'Jubilee' type connections are not permitted."
+ },
+ {
+  "id": "Q042",
+  "ref": "KOC.SA.012",
+  "topic": "Pneumatic Equipment",
+  "q": "At or above what noise level from air compressors and pneumatic tools must warning signs be displayed and hearing protection worn?",
+  "options": [
+   "75 dB",
+   "80 dB",
+   "85 dB",
+   "90 dB"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.1: if noise levels are at or above 85 dB, signs must be displayed and hearing protection worn."
+ },
+ {
+  "id": "Q043",
+  "ref": "KOC.SA.012",
+  "topic": "Abrasive Wheels",
+  "q": "Abrasive wheels in a store have been in stock for more than two years. What does KOC.SA.012 recommend before they are issued?",
+  "options": [
+   "Issue them only for light grinding work",
+   "Consult the manufacturer or supplier first",
+   "Ring test them all, including resin wheels",
+   "Discard them without any further assessment"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.2.7: in case of doubt, or if wheels have been in stock for more than two years, the manufacturer/supplier should be consulted."
+ },
+ {
+  "id": "Q044",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "What is the maximum age of a contractor's mobile equipment or heavy vehicle permitted for work in KOC business under KOC.SA.013?",
+  "options": [
+   "10 years",
+   "15 years",
+   "20 years",
+   "25 years"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2: contractor mobile equipment / heavy vehicles shall not be older than 20 years, subject to suitability and 3rd party certification."
+ },
+ {
+  "id": "Q045",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "How often must a contractor's mobile crane (load handling equipment) be inspected and certified by a KOC-approved inspection contractor?",
+  "options": [
+   "Every 3 months",
+   "Every 6 months",
+   "Every 12 months or contract duration, whichever is earlier",
+   "Every 24 months"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4 I a): general mobile equipment once a year (or contract duration if earlier); load or material handling equipment once every 6 months per KOC.SA.029."
+ },
+ {
+  "id": "Q046",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "A contractor's forklift is involved in a minor incident and then repaired. What does KOC.SA.013 require before it is used again?",
+  "options": [
+   "The operator completes a pre-use checklist",
+   "A new Clearance Certificate based on a new inspection report",
+   "The existing Clearance Certificate is endorsed by the Area HSE Team",
+   "No action is needed for a minor incident"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.6: after any incident or major repair / modification, a new Clearance Certificate is issued based on a new inspection report from a KOC-approved inspection contractor."
+ },
+ {
+  "id": "Q047",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "Under KOC.SA.013, gasoline-operated equipment such as a jumping compactor is restricted on site unless it is fitted with:",
+  "options": [
+   "A reverse alarm and a reverse camera",
+   "Vibration-resistant fuel caps and spark arrestors",
+   "An automatic fire suppression system",
+   "A dead-man switch and emergency stop button"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.6: gasoline-operated equipment is restricted unless fitted with vibration-resistant fuel caps and spark arrestors."
+ },
+ {
+  "id": "Q048",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "In which areas does KOC.SA.013 require mobile equipment to hold a valid Clearance Certificate?",
+  "options": [
+   "Only in Zone 0 and Zone 1 hazardous areas",
+   "Only in hazardous areas inside plant fences",
+   "In both hazardous and non-hazardous areas",
+   "Only for equipment with a State registration plate"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1: all mobile equipment shall require a Clearance Certificate for both hazardous and non-hazardous areas including Ahmadi area."
+ },
+ {
+  "id": "Q049",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "A contractor wants to move a generator from Contract A to Contract B, both under the same contractor, using Contract A's Clearance Certificate and Gate Pass. Under KOC.SA.013 this is:",
+  "options": [
+   "Acceptable, since the contractor is the same",
+   "Acceptable, if the certificate is still valid",
+   "Not acceptable; it must be issued under Contract B",
+   "Acceptable, with Security Team approval"
+  ],
+  "answer": 2,
+  "source": "Cl. 4.6: contractor cannot use mobile equipment with another contract's Clearance Certificate and Gate Pass, even if the contractor is the same (drilling teams excepted)."
+ },
+ {
+  "id": "Q050",
+  "ref": "KOC.SA.013",
+  "topic": "Line of Fire",
+  "q": "During maintenance on a dump truck with a raised bed, which control does KOC.SA.013 require to protect personnel?",
+  "options": [
+   "Lowering the bed onto stacked timber blocks",
+   "Fitting a mechanical locking device to the raised bed",
+   "Keeping the engine running so hydraulics hold the bed",
+   "Posting a banksman to watch the bed during work"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.1 (2): no personnel under a raised bed; use appropriate mechanical locking devices during maintenance to prevent sudden bed movement."
+ },
+ {
+  "id": "Q051",
+  "ref": "KOC.SA.013",
+  "topic": "Mobile Equipment",
+  "q": "Which precaution must be met before a heavy vehicle without an inbuilt spark arrestor is deployed at a KOC worksite?",
+  "options": [
+   "Its exhaust tail pipe must be fitted with a spark arrestor",
+   "It must be parked at least 30 m from process equipment",
+   "Its engine must be switched off every 30 minutes",
+   "Its fuel tank must be at least half full"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.1.1: the exhaust tail pipe is fitted with a spark arrestor in case it is not inbuilt."
+ },
+ {
+  "id": "Q052",
+  "ref": "KOC.SA.015",
+  "topic": "Hot Bolting",
+  "q": "In-service flange bolting replacement (hot bolting) is NOT permitted on flanges having fewer than how many bolts?",
+  "options": [
+   "Four",
+   "Six",
+   "Eight",
+   "Twelve"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3: in-service bolt replacement / rework is not permitted on flanges with less than six bolts."
+ },
+ {
+  "id": "Q053",
+  "ref": "KOC.SA.015",
+  "topic": "Hot Bolting",
+  "q": "Above what line pressure does KOC.SA.015 prohibit in-service flange bolting replacement?",
+  "options": [
+   "3.5 bar (50 psi)",
+   "6.9 bar (100 psi)",
+   "13.6 bar (200 psi)",
+   "20.7 bar (300 psi)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.3: not permitted on high-pressure lines > 13.6 bar (200 psi) including air, nitrogen and hydrocarbons."
+ },
+ {
+  "id": "Q054",
+  "ref": "KOC.SA.015",
+  "topic": "Hot Bolting",
+  "q": "A gas line contains 800 ppm of H2S. Under KOC.SA.015, can in-service hot bolting be carried out on it?",
+  "options": [
+   "Yes, if all workers wear SCBA",
+   "Yes, if line pressure is first reduced",
+   "No, it is in highly sour service",
+   "No, any line above 10 ppm is excluded"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 / 5.3: highly sour service is > 500 ppm H2S; hot bolting is not permitted on systems in highly sour service."
+ },
+ {
+  "id": "Q055",
+  "ref": "KOC.SA.015",
+  "topic": "Hot Bolting",
+  "q": "During in-service bolt replacement on a live flange, how many bolts may be slackened at any one time?",
+  "options": [
+   "One bolt only",
+   "Two adjacent bolts",
+   "Two diagonally opposite bolts",
+   "Up to one quarter of the bolts"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.3 d): slacken one bolt only; under no circumstances must two bolts be slackened at any one time."
+ },
+ {
+  "id": "Q056",
+  "ref": "KOC.SA.015",
+  "topic": "Hot Bolting",
+  "q": "When fitting new bolts during in-service bolt replacement (without tensioning equipment), how far may the bolt protrude beyond the nut?",
+  "options": [
+   "Flush with the nut",
+   "No more than two full threads",
+   "No more than five full threads",
+   "At least 25 mm"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3 h): new bolts should protrude no more than two full threads beyond the nut."
+ },
+ {
+  "id": "Q057",
+  "ref": "KOC.SA.015",
+  "topic": "Flange Breaking",
+  "q": "While breaking a flange, the crew finds the bolts are badly corroded and will not turn. What is the only acceptable removal method under KOC.SA.015?",
+  "options": [
+   "Gas cutting with an oxy-acetylene torch",
+   "Grinding with an angle grinder",
+   "Cutting with a pneumatic hacksaw",
+   "Striking the nuts with an iron hammer"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: if bolts are corroded, the only acceptable method is a pneumatic hacksaw; gas cutting (open flame) shall not be used."
+ },
+ {
+  "id": "Q058",
+  "ref": "KOC.SA.015",
+  "topic": "Flange Breaking",
+  "q": "What is the correct body position and first bolt to loosen when breaking a flange that may still contain pressure?",
+  "options": [
+   "Stand downwind and loosen the bolts nearest to you",
+   "Stand upwind and loosen the bolts farthest away from you",
+   "Stand directly in front and loosen bolts clockwise",
+   "Stand upwind and loosen all bolts evenly at the same time"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2 o) / 5.5 a): maintain a safe upwind position and loosen bolts farthest away first so any release sprays away from the worker."
+ },
+ {
+  "id": "Q059",
+  "ref": "KOC.SA.015",
+  "topic": "Flange Breaking",
+  "q": "Which type of hammer may be used when breaking flanges on lines in hydrocarbon service?",
+  "options": [
+   "Iron hammer",
+   "Steel sledge hammer",
+   "Brass hammer",
+   "Any hammer, if a fire watch is present"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: do not use an iron hammer in hydrocarbon service because impact will generate sparks; only brass hammers shall be used."
+ },
+ {
+  "id": "Q060",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "A leak clamp has been installed on a process line. Within what period does KOC.SA.017 require the original integrity of the line to be restored?",
+  "options": [
+   "1 month",
+   "3 months",
+   "6 months",
+   "12 months"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2: all clamps are temporary; appropriate actions shall be taken to restore original integrity within three months."
+ },
+ {
+  "id": "Q061",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "If permanent repair cannot be done within the initial period, a Clamp Joint Evaluation Meeting may authorize the clamp for a further maximum of:",
+  "options": [
+   "1 month",
+   "3 months",
+   "6 months",
+   "12 months"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2 / 5.3: the Asset Owner may request extension through the Clamp Joint Evaluation Meeting for a maximum of six months after the initial three months."
+ },
+ {
+  "id": "Q062",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "How far in advance must the Asset Owner submit a Clamp Extension Request, with valid justification, before the agreed clamp period expires?",
+  "options": [
+   "At least 3 working days",
+   "At least 5 working days",
+   "At least 10 working days",
+   "At least 30 working days"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: request shall be submitted at least ten working days prior to exceeding the agreed period; authorization from Group Manager (Ops/GO)."
+ },
+ {
+  "id": "Q063",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "Inspection finds that the leak on a pipeline is caused by a crack. What does KOC.SA.017 require?",
+  "options": [
+   "Fit a bolt-on mechanical clamp rated for the MAOP",
+   "Fit a sealing band clamp centred on the crack",
+   "Do not clamp; replace the cracked spool with new pipe",
+   "Fit a split sleeve clamp and de-rate the line"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2: if a crack appears on any area of the piping, clamping shall not be used; the cracked portion shall be replaced with a new pipe spool."
+ },
+ {
+  "id": "Q064",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "What pressure capability must a bolt-on mechanical leak clamp have under KOC.SA.017?",
+  "options": [
+   "At least 50% of the line's operating pressure",
+   "At least equal to the normal operating pressure only",
+   "Capable of containing the MAOP of the carrier pipe",
+   "Equal to the hydrotest pressure of the clamp only"
+  ],
+  "answer": 2,
+  "source": "Cl. 4.3 / 5.2: clamp design pressure not less than that of the piping; the clamp must be capable of containing the MAOP of the carrier pipe."
+ },
+ {
+  "id": "Q065",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "When sealing band clamps are used on isolated external corrosion pits, what is the minimum spacing between two such clamps?",
+  "options": [
+   "No two clamps within one pipe diameter of each other",
+   "No two clamps within 0.5 m of each other",
+   "No two clamps within three pipe diameters of each other",
+   "No minimum spacing applies between clamps"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.2: no two such clamps shall be installed within one pipe diameter of each other."
+ },
+ {
+  "id": "Q066",
+  "ref": "KOC.SA.017",
+  "topic": "Leak Reporting",
+  "q": "When a pipeline leak occurs at a KOC facility, to whom must it be reported in the first instance under KOC.SA.017?",
+  "options": [
+   "Emergency Response Coordination Unit on 160",
+   "Inspection & Corrosion Team by e-mail",
+   "Asset PSM Team within 10 working days",
+   "Contracts Group through the Clamp Register"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.1: whenever a leak occurs it shall be reported to ERCU at 160 and all concerned per KOC.GE.007."
+ },
+ {
+  "id": "Q067",
+  "ref": "KOC.SA.017",
+  "topic": "Pipe Clamping",
+  "q": "A pipeline leak is caused by general corrosion and shows signs of multiple leaks. Which repair means should be considered first?",
+  "options": [
+   "A sealing band clamp at each leak point",
+   "A split sleeve clamp",
+   "Epoxy wrap over the corroded area",
+   "A bolt-on clamp on the largest leak only"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2: clamps are for localized pitting leaks; for general corrosion with multiple leaks, a split sleeve clamp should be considered first."
+ },
+ {
+  "id": "Q068",
+  "ref": "KOC.SA.019",
+  "topic": "Hot-Tapping",
+  "q": "What minimum horizontal radius of warning barricade does KOC.SA.019 require around a hot-tapping site?",
+  "options": [
+   "5 m",
+   "7.5 m",
+   "15 m",
+   "30 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.3.1 xxii: hot-tapping site shall have a warning barricade with a horizontal radius not less than 15 m; mobile equipment kept upwind outside it."
+ },
+ {
+  "id": "Q069",
+  "ref": "KOC.SA.019",
+  "topic": "Plugging",
+  "q": "When a line packer or seal plug is used, how must the end of its vent pipe be arranged?",
+  "options": [
+   "At least 15 m away and left open to atmosphere",
+   "At least 30 m away and dipped in a water bucket",
+   "At least 30 m away and connected to the flare",
+   "At least 50 m away and fitted with an end cap"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.4 / 5.3.3: vent pipe end kept at least 30 m away, dipped in a bucket of clear water, monitored continuously; stop work if bubbles appear."
+ },
+ {
+  "id": "Q070",
+  "ref": "KOC.SA.019",
+  "topic": "In-Service Welding",
+  "q": "Under KOC.SA.019, for which activity is the signature of the KOC Inspection Engineer required on the work permit?",
+  "options": [
+   "Hot-tapping only",
+   "In-service welding only",
+   "Plugging only",
+   "All hot-tapping, welding and plugging work"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.2: Inspection Engineer approval is required only for in-service welding, after confirming remaining wall thickness."
+ },
+ {
+  "id": "Q071",
+  "ref": "KOC.SA.019",
+  "topic": "Hot-Tapping",
+  "q": "How should the hot-tapping machine be installed with respect to the operator's position?",
+  "options": [
+   "So the operator stands downwind of the machine",
+   "So the operator stands upwind of the machine",
+   "So the operator stands directly above the cutter",
+   "Wind direction is not a consideration"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.4: ensure the hot-tapping machine is installed in such a way that the operator is positioned in the upwind direction."
+ },
+ {
+  "id": "Q072",
+  "ref": "KOC.SA.019",
+  "topic": "Hot-Tapping",
+  "q": "How must the weight of the hot-tapping machine be managed during the operation?",
+  "options": [
+   "Rest fully on the pipeline being tapped",
+   "Be independently supported off the pipeline",
+   "Be held by a crane throughout the operation",
+   "Be supported on scaffolding tied to the pipe"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3.1 xix: the hot-tapping machine shall be independently supported; its weight shall not be transferred to the equipment being tapped."
+ },
+ {
+  "id": "Q073",
+  "ref": "KOC.SA.019",
+  "topic": "Hot-Tapping",
+  "q": "Which statement about sparking tools is correct under KOC.SA.019?",
+  "options": [
+   "They are prohibited during both hot-tapping and welding",
+   "They are allowed during hot-tapping but not during welding",
+   "They are not allowed during hot-tapping but are allowed during welding",
+   "They are allowed during both if a fire watch is present"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.3.1 xviii: sparking tools shall not be used during hot tapping; however, they are allowed during welding."
+ },
+ {
+  "id": "Q074",
+  "ref": "KOC.SA.019",
+  "topic": "Plugging",
+  "q": "During a plugging operation, which step is designated a 'HOLD POINT' to be witnessed by the Company's representative?",
+  "options": [
+   "Purging of the isolated section",
+   "Installation of the gas plug",
+   "Removal of the hot-tapping machine",
+   "Completion of the JSA"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3.3: installation of the gas plug shall be a 'HOLD POINT' witnessed by the Company's representative."
+ },
+ {
+  "id": "Q075",
+  "ref": "KOC.SA.019",
+  "topic": "Hot-Tapping",
+  "q": "During hot-tapping, a leak develops at the machine flange. What must the Worksite Supervisor ensure first?",
+  "options": [
+   "Retrieve the cutter, close the valve and stop safely",
+   "Continue cutting at reduced speed to finish the bore",
+   "Tighten the flange bolts while the machine is running",
+   "Have the fire watch spray the flange and continue"
+  ],
+  "answer": 0,
+  "source": "Cl. 4.4: if any hazardous situation (e.g. leak) is observed, ensure the cutter is retrieved, the isolation valve closed and hot work stopped safely."
+ },
+ {
+  "id": "Q076",
+  "ref": "KOC.SA.021",
+  "topic": "Fire Watch",
+  "q": "While welding is in progress, within what radius of the work must the assigned Fire Watch remain until relieved?",
+  "options": [
+   "3 m",
+   "5 m",
+   "8 m",
+   "15 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 4.5: the Fire Watch shall remain within 8 m radius of the work vicinity during welding / cutting until relieved."
+ },
+ {
+  "id": "Q077",
+  "ref": "KOC.SA.021",
+  "topic": "Fire Watch",
+  "q": "After a welding job is completed, how long must the Fire Watch remain at the location?",
+  "options": [
+   "At least 10 minutes",
+   "At least 15 minutes",
+   "At least 30 minutes",
+   "At least 60 minutes"
+  ],
+  "answer": 2,
+  "source": "Cl. 4.5: remain at least 30 minutes after hot work until the area is inspected and found free of ignition sources."
+ },
+ {
+  "id": "Q078",
+  "ref": "KOC.SA.021",
+  "topic": "Welding Fire Protection",
+  "q": "Before welding in a plant area, flammable materials must be cleared, and drains covered with wet tarpaulins, within what distance of the worksite?",
+  "options": [
+   "7.5 m",
+   "10 m",
+   "15 m",
+   "20 m"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.7: flammable materials cleared at least 20 m away; all drains within 20 m covered with wet tarpaulins weighted with sandbags."
+ },
+ {
+  "id": "Q079",
+  "ref": "KOC.SA.021",
+  "topic": "Gas Welding",
+  "q": "Under KOC.SA.021, acetylene must not be generated, piped or used at a pressure exceeding:",
+  "options": [
+   "5 psig",
+   "15 psig",
+   "30 psig",
+   "50 psig"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4: under no condition shall acetylene be used at a pressure in excess of 15 psig (103 kPa gauge)."
+ },
+ {
+  "id": "Q080",
+  "ref": "KOC.SA.021",
+  "topic": "Gas Welding",
+  "q": "Why must fittings containing more than 70% copper (other than a burner tip) not be used in acetylene welding equipment?",
+  "options": [
+   "Copper corrodes rapidly in contact with oxygen",
+   "Copper and acetylene form explosive copper acetylide",
+   "Copper conducts heat back and causes flashback",
+   "Copper lowers the flame temperature too much"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2: copper in contact with acetylene is liable to form a dangerous explosive compound, copper acetylide."
+ },
+ {
+  "id": "Q081",
+  "ref": "KOC.SA.021",
+  "topic": "Welding PPE",
+  "q": "Which filter lens shade range does KOC.SA.021 specify for electric arc welding?",
+  "options": [
+   "3 to 4",
+   "3 to 6",
+   "4 to 8",
+   "10 to 14"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.3 Lens Shade Guide: arc welding 10–14; torch brazing 3–4; gas welding 4–8; cutting 3–6."
+ },
+ {
+  "id": "Q082",
+  "ref": "KOC.SA.021",
+  "topic": "Arc Welding",
+  "q": "What minimum distance must an electric arc welding generator be kept from the hot work area?",
+  "options": [
+   "2 m",
+   "5 m",
+   "10 m",
+   "15 m"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5: the welding generator should be kept at least 5 m away from the hot work area."
+ },
+ {
+  "id": "Q083",
+  "ref": "KOC.SA.021",
+  "topic": "Cold Cutting",
+  "q": "A pipe must be cold cut inside a hazardous area. Which equipment is permitted under KOC.SA.021?",
+  "options": [
+   "Electric-driven pipe cutting machine",
+   "Pneumatic cold cutting machine or manual cutter",
+   "Abrasive disc cutter with a spark guard",
+   "Any cutter, provided a fire watch is present"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6: in a hazardous area only pneumatic cold cutting machines and manual cutters are allowed; electric-driven cutting machines are not allowed."
+ },
+ {
+  "id": "Q084",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "Under the KOC multi-lock sequence for electrical isolation, who applies the FIRST lock?",
+  "options": [
+   "The Permit Issuer, before issuing the permit",
+   "The Authorized Electrical Person, after confirming isolation",
+   "The Worksite Supervisor, after receiving the permit",
+   "The Shift Controller, after approving the request"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6 (i): the first lock shall be applied by the Authorized Electrical Person immediately after confirming electrical isolation."
+ },
+ {
+  "id": "Q085",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "On completion of work, what is the correct order for removing locks from the multi-lock device before electrical de-isolation?",
+  "options": [
+   "Electrical Person, then Permit Issuer, then Worksite Supervisor",
+   "Permit Issuer, then Worksite Supervisor, then Electrical Person",
+   "Worksite Supervisor, then Permit Issuer, then Electrical Person",
+   "Shift Controller removes all locks together at one time"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.6: the sequence is reversed for removal — Worksite Supervisor / Permit Applicant first, Permit Issuer second, Authorized Electrical Person last."
+ },
+ {
+  "id": "Q086",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "Which of the following is NOT considered an energy isolating device under KOC.SA.022?",
+  "options": [
+   "A manually operated circuit breaker",
+   "A manually operated disconnecting switch",
+   "A control-circuit push button",
+   "A cut-out fuse on the supply circuit"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0: push buttons, selector switches and other control circuit type devices are not energy isolating devices."
+ },
+ {
+  "id": "Q087",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "Why does KOC.SA.022 state that Miniature Circuit Breakers (MCBs) should not be used as the point of disconnection?",
+  "options": [
+   "They trip too easily under normal load",
+   "Positive contact separation cannot be confirmed",
+   "They cannot be fitted with any warning tag",
+   "They are only rated for very low voltages"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1 f): do not use MCBs as disconnections because confirming positive contact separation is generally not possible."
+ },
+ {
+  "id": "Q088",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "For multi-disciplinary jobs, KOC.SA.022 recommends colour-coded padlocks. Which colour is assigned to Operations?",
+  "options": [
+   "Yellow",
+   "Blue",
+   "Black",
+   "Red"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6: Yellow – Electrical / Blue – Operation / Black – Mechanical / Red – Instrument."
+ },
+ {
+  "id": "Q089",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "What is the minimum number of individually marked key storage boxes each facility must have for multi-lockout keys?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: each facility shall have at least 4 key storage boxes (Electrical, Mechanical, Instrumentation & Operation)."
+ },
+ {
+  "id": "Q090",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "An urgent electrical isolation is needed to protect the plant and workforce. Under KOC.SA.022, how may it be authorized?",
+  "options": [
+   "Verbally by the Authorized Electrical Person or Shift Controller",
+   "Only after a written Electrical Isolation Certificate is approved",
+   "Verbally by any Worksite Supervisor who is present at site",
+   "Only by the Asset HSE Team after carrying out a site visit"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.4: emergency isolation can be carried out immediately by verbal approval of the Authorized Electrical Person or Shift Controller; written formalities completed once the emergency is over."
+ },
+ {
+  "id": "Q091",
+  "ref": "KOC.SA.022",
+  "topic": "Electrical LOTO",
+  "q": "After isolating and locking an electrical motor, how must the absence of voltage be confirmed before work starts?",
+  "options": [
+   "By pressing the local start button to check it does not run",
+   "By testing with an appropriate and tested voltage tester",
+   "By checking the breaker indicator light is off",
+   "By confirming with the Control Room Operator by radio"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.4 / 5.1 j)–k): verify isolation by electrical measurement; presence of voltage must be tested using an appropriate and tested voltage tester."
+ },
+ {
+  "id": "Q092",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "According to the KOC.SA.024 JSA flow, who initiates, reviews and authorizes a JSA, respectively?",
+  "options": [
+   "Permit Applicant, Permit Issuer, HSE Team",
+   "Worksite Supervisor, Permit Applicant, Permit Issuer",
+   "Safety Officer, Worksite Supervisor, Permit Applicant",
+   "Permit Issuer, Permit Applicant, Worksite Supervisor"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.9 / Appendix 1: JSA initiated by Worksite Supervisor, reviewed by Permit Applicant, authorized by Permit Issuer."
+ },
+ {
+  "id": "Q093",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "For which activities does KOC.SA.024 require a JSA WITH Task Risk Assessment (initial and residual risk)?",
+  "options": [
+   "All routine activities",
+   "All non-routine activities",
+   "Critical activities only",
+   "Only activities in confined spaces"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 / 5.4: JSA with Task Risk Assessment will be carried out only for critical activities."
+ },
+ {
+  "id": "Q094",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "A contractor submits a JSA copied from a similar job at another gathering centre. Under the 2025 revision of KOC.SA.024, this is:",
+  "options": [
+   "Acceptable if the Permit Issuer signs it",
+   "Acceptable for non-critical work only",
+   "Prohibited; a task-specific JSA is needed",
+   "Acceptable if reviewed at the toolbox talk"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1 Note: the use of generic JSA is strictly prohibited; a standalone JSA specific to the exact task, location and worksite conditions must be developed."
+ },
+ {
+  "id": "Q095",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "In KOC.SA.024, 'residual risk' is best defined as the risk:",
+  "options": [
+   "Present before any controls are applied",
+   "Remaining after controls have been applied",
+   "Linked to the worst credible outcome only",
+   "Accepted by the Permit Issuer without controls"
+  ],
+  "answer": 1,
+  "source": "Cl. 2.0: residual risk is the risk remaining after controls have been applied to associated hazards that have been identified."
+ },
+ {
+  "id": "Q096",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "What size of Risk Assessment Matrix (Severity vs Likelihood) is used in the current KOC JSA template?",
+  "options": [
+   "3 x 3",
+   "4 x 4",
+   "5 x 5",
+   "6 x 6"
+  ],
+  "answer": 3,
+  "source": "Revision 3 Aug 2025 / Appendix 1: RAM changed to 6x6 Severity vs Likelihood to align with KOC.GE.018."
+ },
+ {
+  "id": "Q097",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "When a JSA is prepared for a job that involves the use of chemicals, what should it include?",
+  "options": [
+   "A review of the Safety Data Sheets (SDS)",
+   "A chemical purchase requisition",
+   "An environmental impact assessment",
+   "A medical surveillance record for each worker"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.5: JSAs for jobs that involve the use of chemicals should include a review of SDS sheets."
+ },
+ {
+  "id": "Q098",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "On completion of a job carried out under a work permit, where is the JSA sheet retained as a record?",
+  "options": [
+   "With the Worksite Supervisor",
+   "With the Permit Issuer, in file",
+   "With the Asset HSE Team",
+   "It is discarded once the permit is closed"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.7: on completion, the JSA sheet shall be retained in file with the Permit Issuer (routine work without permit: with the Controlling Team)."
+ },
+ {
+  "id": "Q099",
+  "ref": "KOC.SA.024",
+  "topic": "Job Safety Analysis",
+  "q": "A Task Risk Assessment shows the residual risk remains in the intolerable region and engineering alternatives are not feasible. Under the KOC JSA risk regime, the activity may proceed only:",
+  "options": [
+   "With Manager-level endorsement and a risk-reduction action plan",
+   "If the Worksite Supervisor holds an extra toolbox talk on it",
+   "If the Permit Issuer marks the permit as a critical activity",
+   "If additional PPE is issued to every worker on the task"
+  ],
+  "answer": 0,
+  "source": "Appendix 1 Risk Control Regime: intolerable risk — activity shall only proceed upon KOC Management endorsement (Manager and above) supported by a detailed action plan."
+ },
+ {
+  "id": "Q100",
+  "ref": "KOC.SA.025",
+  "topic": "Unexploded Ordnance",
+  "q": "During excavation in an EOD-certified area, a worker uncovers a suspected unexploded shell. What is the correct sequence of first actions?",
+  "options": [
+   "Lift it out carefully and carry it away from the trench",
+   "Leave it untouched, clear and mark the area, move away, call 160",
+   "Photograph it close up on a mobile phone and send it to HSE",
+   "Cover it with sand and carry on in another part of the trench"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.4: do not touch; stop work and clear area; mark location at a safe distance; move away before using radio/phone; inform Fire Station / 160; request EOD assistance."
+ },
+ {
+  "id": "Q101",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Use",
+  "q": "Before electric shot firing with electric detonators, all radio communication equipment within what range must be switched off?",
+  "options": [
+   "25 m",
+   "50 m",
+   "100 m",
+   "150 m"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.1.3.3: handheld radios / transmitters not within 150 m; all radio equipment within 150 m switched off before electric shot firing."
+ },
+ {
+  "id": "Q102",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Misfire",
+  "q": "A charge fired by safety fuse has misfired. What is the minimum time before anyone may approach it?",
+  "options": [
+   "5 minutes",
+   "10 minutes",
+   "15 minutes",
+   "30 minutes"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.1.3.2: no one should approach until not less than 30 minutes (safety fuse) or 10 minutes (electric firing) has elapsed."
+ },
+ {
+  "id": "Q103",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Storage",
+  "q": "Under KOC.SA.025, no naked flame, spark or source of ignition is permitted within what distance of an explosive storage facility?",
+  "options": [
+   "10 m (30 ft)",
+   "15 m (50 ft)",
+   "25 m (80 ft)",
+   "100 m (330 ft)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.1.2: any naked flame, spark or source of ignition shall not be permitted within 25 m (80 ft) of the explosive storage facility."
+ },
+ {
+  "id": "Q104",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Storage",
+  "q": "As a minimum, how far must a permanent explosive storage facility be located from any other building or place visited by employees or the public?",
+  "options": [
+   "15 m",
+   "25 m",
+   "100 m",
+   "270 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.1.1: permanent explosive storage must be at least 100 m from any other building, habitation or place liable to be visited."
+ },
+ {
+  "id": "Q105",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Transport",
+  "q": "Which arrangement for transporting explosives and detonators to a well site complies with KOC.SA.025?",
+  "options": [
+   "Both in the same vehicle, in separate compartments",
+   "Both in the same container, if detonators are shunted",
+   "In separate vehicles, with no explosives in the driver's cab",
+   "Detonators in the driver's cab, explosives in the cargo bed"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1.2: explosives and detonators must be transported separately and not in the same vehicle; no explosive in the driver's cab."
+ },
+ {
+  "id": "Q106",
+  "ref": "KOC.SA.025",
+  "topic": "Explosives Use",
+  "q": "What is the maximum number of charges that should be prepared and loaded for any single firing operation?",
+  "options": [
+   "Five",
+   "Ten",
+   "Fifteen",
+   "Twenty"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1.3.1: a maximum of ten charges should be prepared and loaded for any single firing operation; count the shots fired."
+ },
+ {
+  "id": "Q107",
+  "ref": "KOC.SA.025",
+  "topic": "EOD Certification",
+  "q": "A Controlling Team wants to start work in a new desert area. Which form of EOD clearance is acceptable under KOC.SA.025?",
+  "options": [
+   "Verbal confirmation from the EOD contractor's supervisor",
+   "A printed EOD certificate with the cleared area marked on a map",
+   "An e-mail from any HSE Officer stating the area is clear",
+   "A note on the Permit to Work that the area appears clear"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.3: EOD certification shall be issued on printed format with extent of clearance marked on a map; verbal clearance is not acceptable."
+ },
+ {
+  "id": "Q108",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation",
+  "q": "What is the minimum distance from a hydrocarbon-carrying pipeline within which mechanical excavation (including levelling with an excavator) is prohibited?",
+  "options": [
+   "1 m",
+   "2 m",
+   "3 m",
+   "5 m"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.4 b): no mechanical excavation closer than 5 m to any hydrocarbon carrying pipeline, even for levelling."
+ },
+ {
+  "id": "Q109",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation",
+  "q": "Without a Management of Change and risk assessment, mechanical excavation should not take place closer than what distance to non-hydrocarbon pipelines, cables and services?",
+  "options": [
+   "1 m",
+   "2 m",
+   "3 m",
+   "5 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4 c): no mechanical excavation closer than 3 m to non-hydrocarbon pipelines, cables and services; MOC and risk assessment if closer."
+ },
+ {
+  "id": "Q110",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation Access",
+  "q": "In a trench deeper than 1 m, how must access ladders be provided under KOC.SA.026?",
+  "options": [
+   "Projecting 0.5 m above the edge, every 15 m of travel",
+   "Projecting 1 m above the edge, every 7.5 m of lateral travel",
+   "Projecting 1 m above the edge, every 15 m of lateral travel",
+   "Projecting 1.5 m above the edge, at each end only"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4 i): ladder projecting minimum 1 m above the edge; ladders every 7.5 m (25 ft) of lateral travel, secured top and bottom."
+ },
+ {
+  "id": "Q111",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation",
+  "q": "For an excavation up to 1.2 m deep, what is the minimum distance excavated material (spoil) must be placed from the edge?",
+  "options": [
+   "0.5 m",
+   "1 m",
+   "2 m",
+   "3 m"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4 l): excavated material shall be placed not less than 1 m from the edge for depth up to 1.2 m, increased in proportion to depth."
+ },
+ {
+  "id": "Q112",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation",
+  "q": "Heavy equipment, materials and excavating machinery must be kept at least how far from the excavation area?",
+  "options": [
+   "1 m",
+   "2 m",
+   "3 m",
+   "5 m"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4 n): heavy equipment, material or excavating machinery shall be kept clear from the excavation area by at least 3 m."
+ },
+ {
+  "id": "Q113",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation Barricading",
+  "q": "Which barricading arrangement around an open trench meets KOC.SA.026?",
+  "options": [
+   "Barrier tape tied between steel rebars",
+   "Hard fixed barriers with reflective warning signs",
+   "Rope strung between rebars at each corner",
+   "Spoil heaped along the edge as a bund"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.3 / 5.4 k): hard fixed barriers with reflective warning notices, signs and flashing lights; tapes and rebars shall not be used as barriers."
+ },
+ {
+  "id": "Q114",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation Shoring",
+  "q": "An excavation in Type B soil will exceed 1 m in depth. Which shoring arrangement meets KOC.SA.026?",
+  "options": [
+   "No shoring if the sides are sloped at 30°",
+   "Sheeting 450 mm above ground; boards ≤ 750 mm apart",
+   "Polling boards 2 m apart; braces 2 m apart",
+   "No shoring if the trench is under 2 m deep"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6.1.2 a): Type B over 1 m — shoring required; sheeting at least 450 mm above ground; polling boards ≤ 750 mm apart; horizontal braces ≤ 1 m apart."
+ },
+ {
+  "id": "Q115",
+  "ref": "KOC.SA.026",
+  "topic": "Excavation Permits",
+  "q": "In addition to the Excavation Notification, which work permit is required for excavation using a mechanical excavator?",
+  "options": [
+   "Cold Work Permit",
+   "Hot Work Permit",
+   "Confined Space Entry Certificate only",
+   "Vehicle Entry Permit only"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3 e) / 5.6.2: a Hot Work Permit is required for excavation involving a mechanical excavator; a Cold Work Permit for manual excavation."
+ },
+ {
+  "id": "Q116",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Safety",
+  "q": "How does KOC.SA.027 define 'High Voltage'?",
+  "options": [
+   "A system voltage above 50 V",
+   "A system voltage above 440 V",
+   "A system voltage of 1000 V and above",
+   "A system voltage of 3300 V and above"
+  ],
+  "answer": 3,
+  "source": "Cl. 2.0: High Voltage – a system voltage of 3300 volts and above; Low Voltage – not exceeding 440 volts."
+ },
+ {
+  "id": "Q117",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Safety",
+  "q": "Portable tools and extension cords above 50 V to ground that are frequently plugged and unplugged must be protected by an RCD with a maximum trip setting of:",
+  "options": [
+   "10 mA",
+   "30 mA",
+   "100 mA",
+   "300 mA"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1: such equipment must be protected by permanent or portable RCDs with a 30 mA maximum current setting."
+ },
+ {
+  "id": "Q118",
+  "ref": "KOC.SA.027",
+  "topic": "Overhead Power Lines",
+  "q": "A crane must pass under an existing 132 kV overhead power line. What is the minimum vertical clearance required between the lowest conductor and the top of the equipment?",
+  "options": [
+   "2 m",
+   "5 m",
+   "7 m",
+   "10 m"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1 table: for 33 kV & 132 kV lines, minimum vertical safety clearance from lowest conductor to top of equipment is 5 m (10 m from ground)."
+ },
+ {
+  "id": "Q119",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Safety",
+  "q": "A portable hand lamp on a trailing lead is needed inside a confined space. What does KOC.SA.027 require?",
+  "options": [
+   "Supply not exceeding 24 V and explosion-proof type",
+   "Supply not exceeding 110 V with an RCD",
+   "Supply not exceeding 240 V with double insulation",
+   "Any lamp, if the space is gas free"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.2: for a portable hand lamp on a trailing lead inside a confined space, supply voltage shall not exceed 24 V and only explosion-proof type shall be used."
+ },
+ {
+  "id": "Q120",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Isolation",
+  "q": "When an isolated LV/HV conductor is earthed by installing a copper earthing conductor, what is its minimum cross-section?",
+  "options": [
+   "2.5 sq. mm",
+   "6 sq. mm",
+   "16 sq. mm",
+   "25 sq. mm"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.3 C: each conductor shall be earthed by fixed earthing switch, CB, or a copper conductor of minimum cross section 25 sq. mm."
+ },
+ {
+  "id": "Q121",
+  "ref": "KOC.SA.027",
+  "topic": "Substation Safety",
+  "q": "Before starting work inside a substation protected by a CO2 or clean-agent suppression system, what must the authorized electrical person do?",
+  "options": [
+   "Disable the fire alarm panel for the whole shift",
+   "Switch the system to Manual/Maintenance mode",
+   "Open all doors so any released gas can escape",
+   "Keep the system on Auto and wear an SCBA set"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.4 / 5.3 A: turn the system to Manual/Maintenance mode on entry and return it to Normal (Auto) mode after the job and evacuation; record in the logbook."
+ },
+ {
+  "id": "Q122",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Emergency",
+  "q": "A worker is unconscious and still in contact with an electrical source. What does KOC.SA.027 say should be done first?",
+  "options": [
+   "Pull the victim away by the clothing",
+   "Free the victim using a Rescue Stick",
+   "Pour water on the equipment to trip it",
+   "Wait for Maintenance before touching"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2: the victim should be removed safely from the electrical source by means of a Rescue Stick and artificial respiration given by trained personnel."
+ },
+ {
+  "id": "Q123",
+  "ref": "KOC.SA.027",
+  "topic": "Electrical Safety",
+  "q": "Under the 'Test Before Touch' requirement of KOC.SA.027, how must the voltage tester itself be checked?",
+  "options": [
+   "Only once a year when it is calibrated",
+   "On a known live source before and after use",
+   "Only before use, with its self-test button",
+   "Not needed when the tester is brand new"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1: Test Before Touch includes verifying test instruments on a known energized source before and after the test for absence of voltage."
+ },
+ {
+  "id": "Q124",
+  "ref": "KOC.SA.027",
+  "topic": "HV Cables",
+  "q": "Before cutting an isolated high voltage cable, what must be done at the point of cut?",
+  "options": [
+   "Wrap the cable with insulating tape",
+   "Spike it with a spiking gun or earthed spike",
+   "Test insulation resistance at 5 kV first",
+   "Hang a caution notice at the cut point"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3 D: HV cables shall be spiked at the point where they are to be cut by a spiking gun or a wooden-shafted, earthed steel-shod spike."
+ },
+ {
+  "id": "Q125",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Operations",
+  "q": "A single crane will lift a load equal to 80% of its rated capacity at the planned radius. Under KOC.SA.029, this lift is:",
+  "options": [
+   "A standard lift, since it is below 100% of capacity",
+   "A critical lift, because it exceeds 75% of rated capacity",
+   "A critical lift only if it also exceeds 50 tonnes",
+   "A standard lift if it is done in daylight"
+  ],
+  "answer": 1,
+  "source": "Cl. 2.0 Critical lift: loads exceeding 75% of the rated capacity of any one crane."
+ },
+ {
+  "id": "Q126",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Operations",
+  "q": "Which of the following lifts is classified as a critical lift by height under KOC.SA.029?",
+  "options": [
+   "A lift exceeding 10 m in height",
+   "A lift exceeding 20 m in height",
+   "A lift exceeding 30 m in height",
+   "A lift exceeding 50 m in height"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 Critical lift: lifts which exceed 30 m in height (also > 50 tonnes, > 75% capacity, multiple cranes, man-lifting, etc.)."
+ },
+ {
+  "id": "Q127",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Personnel",
+  "q": "What is the minimum age for an operator of load handling equipment under KOC.SA.029?",
+  "options": [
+   "18 years",
+   "20 years",
+   "21 years",
+   "25 years"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 Operator: should be minimum 21 years of age, with 3rd party training certificates for the equipment."
+ },
+ {
+  "id": "Q128",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Equipment Inspection",
+  "q": "A lifting sling is inspected in November. According to the KOC.SA.029 quarterly colour code, which colour should it carry?",
+  "options": [
+   "Green",
+   "Yellow",
+   "Blue",
+   "White"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2: Q1 Apr–Jun Green; Q2 Jul–Sep Yellow; Q3 Oct–Dec Blue; Q4 Jan–Mar White."
+ },
+ {
+  "id": "Q129",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Operations",
+  "q": "Above what wind speed at the personnel platform must a man-lifting operation not begin, or be terminated if in progress?",
+  "options": [
+   "15 km/h",
+   "24 km/h (15 mph)",
+   "35 km/h",
+   "72 km/h"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.6.5: when wind speed exceeds 15 mph (24 km/h) at the personnel platform, man-lifting must not begin or must be terminated."
+ },
+ {
+  "id": "Q130",
+  "ref": "KOC.SA.029",
+  "topic": "Crane Set-up",
+  "q": "What minimum size of outrigger pad does KOC.SA.029 recommend under each crane outrigger float?",
+  "options": [
+   "Same size as the outrigger foot",
+   "At least twice the size of the outrigger foot",
+   "At least three times the size of the outrigger foot",
+   "At least five times the size of the outrigger foot"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.6.3: outrigger pad size should be at least three times the size of the outrigger foot."
+ },
+ {
+  "id": "Q131",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Tackle",
+  "q": "When must a wire rope be removed from service due to broken wires under KOC.SA.029?",
+  "options": [
+   "When any single broken wire is found",
+   "When broken wires exceed 10% in 8 diameters",
+   "When broken wires exceed 25% in one lay",
+   "Only when a full strand is broken"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.8.3: wire rope shall not be used if, in any length of eight diameters, total visible broken wires exceed 10% of total wires."
+ },
+ {
+  "id": "Q132",
+  "ref": "KOC.SA.029",
+  "topic": "Material Handling Equipment",
+  "q": "What is the maximum speed at which material handling equipment (e.g. a forklift) may be driven while operating inside a company facility?",
+  "options": [
+   "5 km/h",
+   "8 km/h",
+   "15 km/h",
+   "20 km/h"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.8.4: the equipment shall not be driven at a speed exceeding 8 km per hour while operating in a company facility."
+ },
+ {
+  "id": "Q133",
+  "ref": "KOC.SA.029",
+  "topic": "Lifting Equipment Approval",
+  "q": "A contractor installs a fixed tower crane at a KOC site. What is the maximum validity of the Controlling Team's approval before the approval process must be repeated?",
+  "options": [
+   "3 months",
+   "6 months",
+   "12 months",
+   "24 months"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.3: approval for contractor fixed / permanently installed load handling equipment shall not exceed 12 months."
+ },
+ {
+  "id": "Q134",
+  "ref": "KOC.SA.030",
+  "topic": "Painting & Coating",
+  "q": "Unless conditions warrant greater clearance, painting should not be carried out within what distance of potential ignition sources such as welding or flame cutting?",
+  "options": [
+   "25 feet",
+   "50 feet",
+   "75 feet",
+   "100 feet"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.10: no painting should be carried out within 75 feet of potential ignition sources."
+ },
+ {
+  "id": "Q135",
+  "ref": "KOC.SA.030",
+  "topic": "Surface Preparation",
+  "q": "Which surface preparation method is prohibited under KOC.SA.030?",
+  "options": [
+   "Grit blasting",
+   "High pressure water blasting",
+   "Sand blasting",
+   "Power tool cleaning"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: sand blasting is prohibited."
+ },
+ {
+  "id": "Q136",
+  "ref": "KOC.SA.030",
+  "topic": "Surface Preparation",
+  "q": "Which of the following must NOT be used for solvent cleaning of surfaces before painting?",
+  "options": [
+   "Approved detergent solutions",
+   "Alkali cleaners from an approved supplier",
+   "Benzene, gasoline or carbon tetrachloride",
+   "Water-based degreasers"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: benzene, gasoline, carbon tetrachloride and chlorinated hydrocarbons with low TLVs (< 20 ppm) shall not be used for solvent cleaning."
+ },
+ {
+  "id": "Q137",
+  "ref": "KOC.SA.030",
+  "topic": "Painting Fire Precautions",
+  "q": "If practical alternatives exist, solvents and paints shall not be applied to surfaces warmer than:",
+  "options": [
+   "40°C",
+   "50°C",
+   "60°C",
+   "80°C"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.10: solvents and paints shall not be applied to surfaces warmer than 80°C if practical alternatives exist (and not flushed into containers hotter than 50°C)."
+ },
+ {
+  "id": "Q138",
+  "ref": "KOC.SA.030",
+  "topic": "Airless Spraying",
+  "q": "A painter suffers a small skin puncture from high-pressure fluid from an airless spray gun. What does KOC.SA.030 require?",
+  "options": [
+   "Clean with solvent and apply a plaster",
+   "Continue work and report at the end of shift",
+   "Obtain emergency medical care immediately",
+   "Wash with soap and monitor for 24 hours"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.5: emergency medical care shall be obtained immediately if any high pressure fluid penetrates the skin; injection injuries can be extremely serious."
+ },
+ {
+  "id": "Q139",
+  "ref": "KOC.SA.030",
+  "topic": "Painting in Confined Spaces",
+  "q": "Inside a confined space, during which activities must all personnel wear respirable air-fed hoods under KOC.SA.030?",
+  "options": [
+   "Only during abrasive blasting of surfaces",
+   "Only during airless spray painting work",
+   "During blasting, spraying, solvent or brush work",
+   "Only when the LEL reading exceeds 10%"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.8: air-fed hoods shall be worn inside confined spaces whenever blasting or spray painting, solvent cleaning or brush painting is in progress."
+ },
+ {
+  "id": "Q140",
+  "ref": "KOC.SA.030",
+  "topic": "Paint Storage",
+  "q": "Where should paint or thinner be decanted from one container to another?",
+  "options": [
+   "Inside the store, near the shelves",
+   "In the open air, away from hazardous operations",
+   "Inside the spray booth, exhaust running",
+   "At the work face, beside the item painted"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.11: dispensing or decanting shall not take place within the store but in the open air away from areas of hazardous operations."
+ },
+ {
+  "id": "Q141",
+  "ref": "KOC.SA.030",
+  "topic": "Airless Spraying",
+  "q": "What must be done whenever an airless spray gun is left unattended?",
+  "options": [
+   "Remove the tip guard",
+   "Engage the trigger safety catch",
+   "Point the gun into the paint bucket",
+   "Disconnect the earthing lead"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5: the trigger safety catch shall be engaged whenever the airless gun is left unattended; tip guard always in place while spraying."
+ },
+ {
+  "id": "Q142",
+  "ref": "KOC.SA.031",
+  "topic": "Working at Height",
+  "q": "Under KOC.SA.031, an activity is defined as 'work at height' when it is carried out at an elevated location higher than:",
+  "options": [
+   "1.2 m (4 ft)",
+   "1.5 m (5 ft)",
+   "1.8 m (6 ft)",
+   "2.4 m (8 ft)"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0: work at height is an activity at an elevated location of more than 1.8 m (6 ft) from the working ground level."
+ },
+ {
+  "id": "Q143",
+  "ref": "KOC.SA.031",
+  "topic": "Fall Protection",
+  "q": "What minimum load must a fixed anchor point be capable of supporting for each person attached to it?",
+  "options": [
+   "1,000 lb (4.4 kN)",
+   "3,000 lb (13.3 kN)",
+   "5,000 lb (22.2 kN)",
+   "10,000 lb (44.4 kN)"
+  ],
+  "answer": 2,
+  "source": "Cl. 2.0 / 5.2.3.3: an anchorage must be capable of supporting at least 5,000 lb (22.2 kN) for each person attached."
+ },
+ {
+  "id": "Q144",
+  "ref": "KOC.SA.031",
+  "topic": "Fall Protection",
+  "q": "Which lanyard specification complies with KOC.SA.031 for use with a full body harness?",
+  "options": [
+   "Max 1.8 m, shock absorber, self-locking hooks",
+   "Max 2.5 m, single-action snap hooks",
+   "Max 3 m, made of polypropylene rope",
+   "Any length, shortened by tying knots"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.2.3.2: maximum lanyard length 1.8 m (6 ft), self-locking hooks each end, shock absorber; never shortened with knots; no polypropylene."
+ },
+ {
+  "id": "Q145",
+  "ref": "KOC.SA.031",
+  "topic": "Fixed Ladders",
+  "q": "As a general guideline, at what length of climb on a fixed ladder must appropriate fall protection be provided?",
+  "options": [
+   "3 m (10 ft) or more",
+   "4.5 m (15 ft) or more",
+   "7.3 m (24 ft) or more",
+   "9 m (30 ft) or more"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.2: appropriate fall protection must be provided whenever the length of climb on a fixed ladder equals or exceeds 24 ft (7.3 m)."
+ },
+ {
+  "id": "Q146",
+  "ref": "KOC.SA.031",
+  "topic": "Edge Protection",
+  "q": "Which guardrail arrangement meets the KOC.SA.031 edge protection requirements?",
+  "options": [
+   "Top rail 750 mm high; no mid rail needed",
+   "Top rail ≥ 950 mm; no gap over 470 mm",
+   "Top rail 1,200 mm; gaps up to 600 mm",
+   "Steel banding as top rail at 1,000 mm"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.1 / 5.2.3.8: main guard rail at least 950 mm (normally 1,000 mm); no gap more than 470 mm; steel/plastic banding not permitted as rails."
+ },
+ {
+  "id": "Q147",
+  "ref": "KOC.SA.031",
+  "topic": "Fall Protection",
+  "q": "Which statement about personal fall arrest equipment is correct under KOC.SA.031?",
+  "options": [
+   "A body belt may be used if it has a shock absorber",
+   "Body belts are prohibited; harness with 100% tie-off",
+   "100% tie-off is needed only above 6 m in height",
+   "One lanyard is enough when moving between anchors"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.3.1: full body harness with two shock-absorbing lanyards; use of a body belt for fall arrest is prohibited; ensure 100% tie-off."
+ },
+ {
+  "id": "Q148",
+  "ref": "KOC.SA.031",
+  "topic": "Fall Protection Inspection",
+  "q": "In addition to the user's visual pre-use check, how often must the Controlling Team ensure harnesses, lanyards and lifelines are formally inspected and tagged?",
+  "options": [
+   "Weekly",
+   "Monthly",
+   "Every 6 months",
+   "Annually"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3: all fall-arresting equipment shall be subjected to a monthly inspection program and tagged if fit for use."
+ },
+ {
+  "id": "Q149",
+  "ref": "KOC.SA.031",
+  "topic": "Fall Protection",
+  "q": "A worker's lanyard arrested a short fall, and the shock absorber appears undamaged. What does KOC.SA.031 require?",
+  "options": [
+   "Re-use it after a careful visual check",
+   "Re-use it after re-packing the absorber",
+   "Remove it from service permanently",
+   "Use it for work restraint only"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.3.2 / 5.3: components subjected to impact loading shall be removed from service; equipment involved in a fall must not be used again."
+ },
+ {
+  "id": "Q150",
+  "ref": "KOC.SA.031",
+  "topic": "Man Basket",
+  "q": "Use of a crane-suspended man basket to lift workers is permitted only in exceptional cases. How must the lift be classified and planned?",
+  "options": [
+   "As a standard lift with a JSA only",
+   "As a critical lift with a Critical Lift Plan",
+   "As routine work not requiring a permit",
+   "As a standard lift if fitted with guardrails"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.2: use of a man basket shall be considered a critical lift; a Critical Lift Plan shall be prepared per KOC.SA.029."
+ },
+ {
+  "id": "Q151",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Cylinder Storage",
+  "q": "In a cylinder store, oxygen cylinders must be separated from fuel-gas cylinders by a minimum of:",
+  "options": [
+   "3 m, or a 1 m high barrier",
+   "6.1 m, or a 1.5 m high fire-rated barrier",
+   "10 m, with no barrier option allowed",
+   "15 m, or any solid wall of any height"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4: oxygen separated from fuel-gas cylinders by at least 20 ft (6.1 m) or a non-combustible barrier at least 5 ft (1.5 m) high, ½-hour fire resistance."
+ },
+ {
+  "id": "Q152",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Welding Hoses",
+  "q": "According to the hose colour coding in KOC.SA.035 (BS EN ISO 3821), which colour hose is used for acetylene?",
+  "options": [
+   "Blue",
+   "Red",
+   "Orange",
+   "Black"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.7: Blue – Oxygen; Red – Acetylene; Orange – Propane, LPG, Natural Gas or Fuel Gas."
+ },
+ {
+  "id": "Q153",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Cylinder Storage",
+  "q": "Compressed gas cylinders must not be exposed to temperatures (including direct sunlight) exceeding:",
+  "options": [
+   "40°C (104°F)",
+   "50°C (122°F)",
+   "54.5°C (130°F)",
+   "65°C (149°F)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4: any cylinder containing compressed gas shall not be subjected to a temperature exceeding 54.5°C (130°F)."
+ },
+ {
+  "id": "Q154",
+  "ref": "KOC.SA.035",
+  "topic": "Acetylene Cylinders",
+  "q": "Why must acetylene cylinders be stored, handled and used in the vertical position?",
+  "options": [
+   "To let the porous mass settle evenly",
+   "To stop liquid acetone escaping to the valve",
+   "To keep the cylinder cooler in sunlight",
+   "To make the colour code easier to read"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1: acetylene is dissolved in acetone; cylinders must be kept vertical to prevent liquid acetone escaping and damaging valves and equipment."
+ },
+ {
+  "id": "Q155",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Cylinder Identification",
+  "q": "As a means of distinguishing gases, which valve outlet thread is used on acetylene, hydrogen and other flammable gas cylinders?",
+  "options": [
+   "Right-hand thread",
+   "Left-hand thread",
+   "Quick-connect bayonet fitting",
+   "The same thread as oxygen"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2: right-hand thread for oxygen and non-flammable gases; left-hand thread for acetylene, hydrogen and flammable gases."
+ },
+ {
+  "id": "Q156",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Welding Hoses",
+  "q": "A flashback occurs during oxy-acetylene cutting, but the hose looks intact from outside. What must be done with the hose?",
+  "options": [
+   "Purge it with oxygen and continue the job",
+   "Leak test with soapy water and re-use if OK",
+   "Discard it immediately; the inner wall is damaged",
+   "Cut off the last metre and re-use the rest"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: any hose in which a flashback has occurred will have its inner wall damaged and must be discarded immediately."
+ },
+ {
+  "id": "Q157",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Cylinder Use",
+  "q": "After opening a gas cylinder valve fully for use, how should it be left?",
+  "options": [
+   "Fully open against the back stop",
+   "A half turn back from full open",
+   "Only one quarter open",
+   "Fully open and taped in position"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5: an open valve shall be left a half turn back from full open so that movement to the back stop indicates the valve is open."
+ },
+ {
+  "id": "Q158",
+  "ref": "KOC.SA.035",
+  "topic": "Gas Cylinder Use",
+  "q": "'Snifting' (briefly opening a cylinder valve to clear dirt before fitting a regulator) is permitted for most gases. For which gas is it NEVER allowed?",
+  "options": [
+   "Oxygen",
+   "Nitrogen",
+   "Argon",
+   "Hydrogen"
+  ],
+  "answer": 3,
+  "source": "Cl. 5.5: hydrogen shall never be snifted as it may ignite spontaneously."
+ },
+ {
+  "id": "Q159",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "According to KOC.HE.003, what is the permissible flammable gas limit for authorized cold work?",
+  "options": [
+   "0% LEL",
+   "Below 5% LEL",
+   "Below 10% LEL",
+   "Below 25% LEL"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.6.1: the permissible limit for authorized cold work is below 10% of the LEL (hot work: 0% LEL)."
+ },
+ {
+  "id": "Q160",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "Where periodic gas testing is used during hot or cold work, the test interval must not exceed:",
+  "options": [
+   "30 minutes",
+   "1 hour",
+   "2 hours",
+   "4 hours"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.6.1 / 5.6.3: testing continuously or periodically with the test interval not exceeding two hours."
+ },
+ {
+  "id": "Q161",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "When gas testing for hot work, the gas test area shall include everywhere within what distance of the hot work location?",
+  "options": [
+   "5 m (16 ft)",
+   "7.5 m (25 ft)",
+   "15 m (50 ft)",
+   "30 m (100 ft)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: the gas test area shall include everywhere within 50 ft (15 m) of the hot work location."
+ },
+ {
+  "id": "Q162",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "A confined space is being mechanically ventilated by an exhaust fan. When should the gas test be carried out?",
+  "options": [
+   "While the fan is running at full speed",
+   "Immediately after switching the fan off",
+   "About 10 minutes after stopping the exhaust fan",
+   "Only after the fan has been removed from the manway"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: for a mechanically ventilated confined space, test only after 10 minutes of stopping the exhaust fan to avoid the effect of air draft."
+ },
+ {
+  "id": "Q163",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "Which acceptable exposure levels (TLV-TWA) does KOC.HE.003 state for carbon monoxide and sulphur dioxide?",
+  "options": [
+   "CO 25 ppm; SO2 5 ppm",
+   "CO 50 ppm; SO2 2 ppm",
+   "CO 10 ppm; SO2 10 ppm",
+   "CO 35 ppm; SO2 1 ppm"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.3: acceptable levels — carbon monoxide 25 ppm (TLV-TWA, ACGIH) and sulphur dioxide 5 ppm (TLV-TWA, KEPA)."
+ },
+ {
+  "id": "Q164",
+  "ref": "KOC.HE.003",
+  "topic": "Exposure Limits",
+  "q": "Under the TLV-STEL definition in KOC.HE.003, exposures above the TLV-TWA up to the STEL should be:",
+  "options": [
+   "Less than 15 minutes each, no more than 4 times a day, at least 60 minutes apart",
+   "Less than 30 minutes each, no more than 2 times a day, at least 30 minutes apart",
+   "Less than 15 minutes each, unlimited times a day",
+   "Less than 60 minutes each, once a day"
+  ],
+  "answer": 0,
+  "source": "Cl. 2.0: exposures above TWA up to STEL should be < 15 minutes, no more than four times per day, with at least 60 minutes between them."
+ },
+ {
+  "id": "Q165",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Detectors",
+  "q": "Which type of portable gas detector must be used for all INITIAL gas tests under KOC.HE.003?",
+  "options": [
+   "Non-aspirated diffusion personal monitor",
+   "Aspirated monitor with built-in sampling pump",
+   "Single-gas H2S badge clipped on the collar",
+   "Fixed area gas detector at the facility"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4.1: aspirated gas monitors (built-in pump) — all initial gas tests shall be done with this type of detector."
+ },
+ {
+  "id": "Q166",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Testing",
+  "q": "When testing a vessel where H2S could be present, where is it essential to sample?",
+  "options": [
+   "As close to the top of the vessel as possible",
+   "Only at the manway opening of the vessel",
+   "As close to the bottom of the vessel as possible",
+   "Only through the vessel's vent line"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.5 / 5.7: H2S is heavier than air (1.19); sample as close to the bottom as possible."
+ },
+ {
+  "id": "Q167",
+  "ref": "KOC.HE.003",
+  "topic": "Gas Detectors",
+  "q": "A gas detector is taken from an air-conditioned office to a hot outdoor worksite. What does KOC.HE.003 advise before using it?",
+  "options": [
+   "Use it immediately, as sensors are temperature compensated",
+   "Allow 5–30 minutes for the instrument to stabilize to the temperature",
+   "Re-calibrate it in the field with test gas every time",
+   "Keep it in a plastic bag to avoid condensation during the test"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.1: allow sufficient time for the equipment to temperature stabilize prior to use, which may vary between 5–30 minutes."
+ },
+ {
+  "id": "Q168",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid",
+  "q": "A contractor has 120 workers at a site. Under KOC.HE.004, what is the minimum number of first aiders required?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4.1 c): one first aider per every 50 employees / contract workers (minimum one). 120 workers → 3 first aiders."
+ },
+ {
+  "id": "Q169",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid",
+  "q": "What is the required provision of first aid kits under KOC.HE.004?",
+  "options": [
+   "One kit per 25 workers",
+   "One kit per 50 workers",
+   "One kit per 100 workers",
+   "One kit per facility, regardless of numbers"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5 / 5.8: one first aid kit shall be made available for every 50 workers."
+ },
+ {
+  "id": "Q170",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid Training",
+  "q": "To remain appropriately qualified, how often must a KOC first aider attend a first aid refresher course?",
+  "options": [
+   "Every year",
+   "Every 2 years",
+   "Every 3 years",
+   "Every 5 years"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.5 B: first aiders attend refresher training courses every three (3) years."
+ },
+ {
+  "id": "Q171",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid Training",
+  "q": "How often must designated first aiders attend a CPR and AED training session?",
+  "options": [
+   "Every 6 months",
+   "Once every year",
+   "Every 2 years",
+   "Every 3 years"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5 B / 5.6.1: attend CPR & AED training session once every year."
+ },
+ {
+  "id": "Q172",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid Facilities",
+  "q": "Under KOC.HE.004 and Kuwait labour requirements, a contractor must establish a First Aid Room wherever how many workers are engaged?",
+  "options": [
+   "20 or more",
+   "30 or more",
+   "50 or more",
+   "100 or more"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.4.1 a) / 5.5 II A: a First Aid Room shall be established wherever fifty (50) or more workers are engaged."
+ },
+ {
+  "id": "Q173",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid Kits",
+  "q": "Which statement about first aid kit containers is correct under KOC.HE.004?",
+  "options": [
+   "Locked, to prevent theft of contents",
+   "Clearly labelled, visible and not locked",
+   "Opened only by the site medic",
+   "Kept inside the supervisor's office"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.8.1: the first aid container should be prominently displayed, labelled 'First Aid Box', accessible, and should not be locked."
+ },
+ {
+  "id": "Q174",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid Reporting",
+  "q": "Within what time must a first aid case be reported in MyHSSE under KOC.HE.004 (with KOC.GE.007)?",
+  "options": [
+   "Within 4 hours",
+   "Within 24 hours",
+   "Within 48 hours",
+   "Within 7 days"
+  ],
+  "answer": 1,
+  "source": "Cl. 4: report in MyHSSE within 24 hours of incident occurrence (as per KOC.GE.007 & KOC.HE.020)."
+ },
+ {
+  "id": "Q175",
+  "ref": "KOC.HE.004",
+  "topic": "First Aid",
+  "q": "Which statement best describes the role of a first aider under KOC.HE.004?",
+  "options": [
+   "Give initial care within training; refer to medical advice",
+   "Provide ongoing treatment until full recovery",
+   "Prescribe medicines from the first aid kit stock",
+   "Decide whether the injury needs to be reported"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.6: first aiders undertake initial treatment consistent with training; when in doubt recommend medical advice; not responsible for ongoing care."
+ },
+ {
+  "id": "Q176",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "In an open yard storage area, what is the maximum height to which combustible materials may be piled?",
+  "options": [
+   "3 m (10 ft)",
+   "4.57 m (15 ft)",
+   "6.1 m (20 ft)",
+   "9 m (30 ft)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.1: combustible materials shall in no case be piled higher than 20 ft (6.1 m)."
+ },
+ {
+  "id": "Q177",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "What minimum width must driveways between and around combustible storage piles be kept?",
+  "options": [
+   "3 m (10 ft)",
+   "4.57 m (15 ft)",
+   "6.1 m (20 ft)",
+   "7.5 m (25 ft)"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.1: driveways between and around combustible storage piles must be at least 15 ft (4.57 m) wide."
+ },
+ {
+  "id": "Q178",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "Under KOC.GE.034, combustible material may NOT be stored outdoors within what distance of a building or structure?",
+  "options": [
+   "1 m (3 ft)",
+   "3 m (10 ft)",
+   "6 m (20 ft)",
+   "15 m (50 ft)"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.2.1: no combustible material may be stored outdoors within 10 ft (3.048 m) of a building or structure."
+ },
+ {
+  "id": "Q179",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "In an indoor store with sprinklers, what minimum clearance must be kept between the top of stored material and the sprinkler deflectors?",
+  "options": [
+   "18 inches (0.45 m)",
+   "24 inches (0.6 m)",
+   "36 inches (0.9 m)",
+   "48 inches (1.2 m)"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.2: clearance of at least 36 inches (0.9144 m) must be maintained between stored material and sprinkler deflectors."
+ },
+ {
+  "id": "Q180",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "Non-compatible materials that may create a fire, explosion or reaction hazard must be segregated in storage by a barrier with a fire resistance of at least:",
+  "options": [
+   "15 minutes",
+   "30 minutes",
+   "1 hour",
+   "2 hours"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.2.2: non-compatible materials must be segregated by a barrier having a fire resistance of at least 1 hour."
+ },
+ {
+  "id": "Q181",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "Where needed for access to doors, windows or standpipe connections, aisles must be kept at least how wide?",
+  "options": [
+   "0.6 m (2 ft)",
+   "0.9 m (3 ft)",
+   "1.2 m (4 ft)",
+   "1.5 m (5 ft)"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3: keep aisles at least 3 ft (0.9144 m) wide where necessary for access to doors, windows or standpipe connections."
+ },
+ {
+  "id": "Q182",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "What does KOC.GE.034 recommend regarding end-of-day cleaning on construction sites?",
+  "options": [
+   "Cleaning is done by a separate night crew only",
+   "Work stops half an hour early for site cleaning",
+   "Housekeeping is done once a week on rest day",
+   "Cleaning is needed only before HSE inspections"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.0 Note: it is highly recommended that construction activities cease half an hour before and that time be used for area cleaning / housekeeping."
+ },
+ {
+  "id": "Q183",
+  "ref": "KOC.GE.034",
+  "topic": "Housekeeping",
+  "q": "Under KOC.GE.034, what must Team Leaders ensure regarding gasoline within the battery limits of KOC projects, facilities and drilling sites?",
+  "options": [
+   "Gasoline may be stored in approved jerry cans up to 20 litres",
+   "No gasoline storage or refuelling is allowed",
+   "Gasoline may be stored if kept 15 m from buildings",
+   "Gasoline refuelling is allowed only during daylight"
+  ],
+  "answer": 1,
+  "source": "Cl. 4.1: ensure that no gasoline storage or its refuelling is allowed in the KOC jurisdiction battery limit of any projects / facilities / drilling sites."
+ },
+ {
+  "id": "Q184",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Emergency",
+  "q": "A worker's personal H2S monitor goes into alarm near a sour wellhead. What is the correct immediate response under KOC.GE.036?",
+  "options": [
+   "Run downwind to the nearest vehicle and drive off",
+   "Don escape set, check windsock, walk crosswind",
+   "Stay in place and wait for Control Room instructions",
+   "Help colleagues nearer the release before leaving"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.x Escape from H2S Release: put on escape-only respirator, observe windsock, walk (don't run) crosswind to Control Room / muster point; do not attempt to rescue others."
+ },
+ {
+  "id": "Q185",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Detection",
+  "q": "When purchasing personal H2S monitors, KOC.GE.036 recommends two alarm set points. What are they?",
+  "options": [
+   "First alarm at or below 5 ppm; second at or below 10 ppm",
+   "First alarm at or below 10 ppm; second at or below 15 ppm",
+   "First alarm at or below 15 ppm; second at or below 50 ppm",
+   "First alarm at or below 20 ppm; second at or below 100 ppm"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.3 c): units should alarm at or below 10 ppm (TWA/8 hrs) for the first alarm and at or below 15 ppm (STEL/15 min) for the second."
+ },
+ {
+  "id": "Q186",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Exposure Limits",
+  "q": "According to KOC.GE.036 Table 2, when H2S is between 10 and 15 ppm, work without respiratory protection is permitted for:",
+  "options": [
+   "A full 8-hour shift",
+   "15 min, up to 4 times per shift",
+   "30 min, up to 2 times per shift",
+   "Not permitted at all"
+  ],
+  "answer": 1,
+  "source": "Table 2: between 10 to 15 ppm, work is permitted for a 15-minute period without RPE, up to 4 times during an 8-hour shift."
+ },
+ {
+  "id": "Q187",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Exposure Limits",
+  "q": "Gas testing shows 60 ppm H2S at a worksite and the source cannot be isolated, purged or ventilated. Under KOC.GE.036, what is required for work to proceed?",
+  "options": [
+   "An air-purifying escape respirator",
+   "Supplied-air respirator or 30-minute SCBA",
+   "A half-face cartridge respirator",
+   "No work is allowed above 50 ppm"
+  ],
+  "answer": 1,
+  "source": "Table 2: up to 100 ppm, work is permitted with positive-pressure supplied air respirator or 30-min SCBA only if the source cannot be isolated; above 100 ppm entry only for rescue."
+ },
+ {
+  "id": "Q188",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Detection",
+  "q": "Where should a personal H2S monitor be worn?",
+  "options": [
+   "Inside the coverall pocket, away from dust",
+   "On the belt at waist level",
+   "Outside clothing, near the head",
+   "Clipped to the safety boot"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.3 c): worn outside clothing close to the head, as this is where H2S will be ingested; shoulder or breast pocket is optimal."
+ },
+ {
+  "id": "Q189",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Detection",
+  "q": "A crew of 14 workers will carry out maintenance in an area where H2S hazards may be present, but the facility itself is not sour. What gas detection does KOC.GE.036 require?",
+  "options": [
+   "One personal gas monitor for the crew",
+   "A tripod-mounted multi-gas area detector",
+   "No detector, as the facility is not sour",
+   "One personal monitor per five workers"
+  ],
+  "answer": 1,
+  "source": "Cl. 4 Field Workers c): one personal monitor per crew below 10 workers; more than 10 workers — a tripod-mounted portable multi-gas detector; sour facility — every worker carries one."
+ },
+ {
+  "id": "Q190",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Hazards",
+  "q": "KOC.GE.036 defines 'sour' hydrocarbons as oil or gas containing H2S above:",
+  "options": [
+   "1 ppm (0.0001%)",
+   "10 ppm (0.001%)",
+   "100 ppm (0.01%)",
+   "500 ppm (0.05%)"
+  ],
+  "answer": 1,
+  "source": "Cl. 2.0: sour hydrocarbons contain more than 0.001%, i.e. 10 ppm of hydrogen sulphide."
+ },
+ {
+  "id": "Q191",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Hazards",
+  "q": "Why can opening a vessel that handled sour product be hazardous even after it has been drained?",
+  "options": [
+   "Dry pyrophoric iron sulphide can self-ignite in air",
+   "H2S turns lighter than air once the vessel is open",
+   "Rust deposits stop portable gas detectors working",
+   "Sulphur dioxide is released when water is added"
+  ],
+  "answer": 0,
+  "source": "Cl. 5.2 f): pyrophoric scale (ferrous sulphide) reacts exothermically with oxygen and, when dry, auto-ignites at ambient temperature."
+ },
+ {
+  "id": "Q192",
+  "ref": "KOC.GE.036",
+  "topic": "H2S Training",
+  "q": "How often must personnel who may enter H2S hazardous areas receive H2S awareness training under KOC.GE.036?",
+  "options": [
+   "Once, at induction only",
+   "Annually",
+   "Every 2 years",
+   "Every 3 years"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.4 a): personnel who may be required to enter H2S hazardous areas shall receive annual H2S awareness."
+ },
+ {
+  "id": "Q193",
+  "ref": "KOC.PS.016",
+  "topic": "Mechanical Isolation",
+  "q": "What is the minimum isolation standard required for entry into a vessel or confined space under KOC.PS.016?",
+  "options": [
+   "Single block valve, locked and tagged",
+   "Double block and bleed valve isolation",
+   "Positive isolation from all connections",
+   "ESD valve closed with actuator enabled"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.1 / 5.5.1: the minimum isolation standard for vessel or confined space entry is positive isolation; it is mandatory for such entry."
+ },
+ {
+  "id": "Q194",
+  "ref": "KOC.PS.016",
+  "topic": "Mechanical Isolation",
+  "q": "Which is the PREFERRED method of achieving positive isolation according to KOC.PS.016?",
+  "options": [
+   "Closing two block valves with an open bleed",
+   "Spool removal with rated blank flanges on the live ends",
+   "Inserting a spade only when spool removal is easier",
+   "Closing a single gate valve and locking it"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5.1: spool removal is the preferred method of positive isolation; spade insertion where spool removal is not reasonably practicable; valves alone are not positive isolation."
+ },
+ {
+  "id": "Q195",
+  "ref": "KOC.PS.016",
+  "topic": "Isolation Integrity",
+  "q": "Before breaking containment, how long does KOC.PS.016 recommend that isolation integrity tests be conducted, as a minimum?",
+  "options": [
+   "2 minutes",
+   "5 minutes",
+   "10 minutes",
+   "30 minutes"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.7: all isolations shall be tested and shown to be effective before containment is broken; integrity tests recommended for a minimum of 10 minutes."
+ },
+ {
+  "id": "Q196",
+  "ref": "KOC.PS.016",
+  "topic": "Isolation Integrity",
+  "q": "What is the minimum recommended frequency for monitoring the integrity of isolation points while containment is broken?",
+  "options": [
+   "Once per week, at the start of the work week",
+   "Once per day, at the start of day shift only",
+   "Once per shift and just before breaking containment",
+   "Only when the Work Party requests a check"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.8: minimum recommended monitoring frequency is once per shift and immediately prior to breaking containment; results recorded at shift handover."
+ },
+ {
+  "id": "Q197",
+  "ref": "KOC.PS.016",
+  "topic": "Isolation Valves",
+  "q": "Which type of valve shall NOT be used as a form of isolation under KOC.PS.016?",
+  "options": [
+   "Manually operated ball valve",
+   "Manually operated gate valve",
+   "Non-return (check) valve",
+   "Fail-closed ESD valve with actuator disabled"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.9: non-return (check) valves, flow control valves and pressure relief valves shall not be used as a form of isolation."
+ },
+ {
+  "id": "Q198",
+  "ref": "KOC.PS.016",
+  "topic": "Double Block and Bleed",
+  "q": "During work under a double block and bleed isolation, the gauge on the bleed between the two block valves starts to show pressure. What must happen?",
+  "options": [
+   "Open the bleed fully and continue working",
+   "Stop work and review and amend the isolation",
+   "Tighten the upstream valve and continue",
+   "Record it at shift handover and continue"
+  ],
+  "answer": 1,
+  "source": "Cl. 5.5.2: the void between block valves must remain at 0 barg; if pressure increases, work shall stop and the isolation be reviewed and amended."
+ },
+ {
+  "id": "Q199",
+  "ref": "KOC.PS.016",
+  "topic": "Mechanical Isolation",
+  "q": "Besides vessel entry, KOC.PS.016 recommends positive isolation for long-duration isolations. What duration is given as an example?",
+  "options": [
+   "More than one shift",
+   "More than 24 hours",
+   "More than one week",
+   "More than one month"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.5.1: positive isolation recommended for long duration isolations, e.g. more than one week, hot work, and new/out-of-service equipment interfaces."
+ },
+ {
+  "id": "Q200",
+  "ref": "KOC.PS.016",
+  "topic": "Lock-Out / Tag-Out",
+  "q": "Under KOC.PS.016, how are bleeds and vents that form part of an isolation to be controlled?",
+  "options": [
+   "Padlocked shut like the block valves",
+   "Left untagged so they can be operated",
+   "Tagged and recorded, without a lock",
+   "Removed from the line and blanked"
+  ],
+  "answer": 2,
+  "source": "Cl. 5.13: bleeds and vents do not require a securing device, as their position may change, but they require a bleed/vent tag and must be documented on the Certificate."
+ }
+]

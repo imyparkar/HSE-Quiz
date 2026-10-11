@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live HSE Quiz – Presenter</title>
+<meta name="description" content="Live, timed HSE quiz on KOC HSSE procedures — presenter screen">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5b301'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='900' text-anchor='middle' fill='%231a1300'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="mark">HSE</div><div>Live HSE Quiz <span class="muted" style="font-weight:400">· Presenter</span></div></div>
+  <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+    <span class="chip hidden" id="roomChip">Room <b id="roomCode">—</b></span>
+    <span class="chip"><span class="conn off" id="conn"></span><span id="connText">Offline</span></span>
+    <button class="btn ghost small" id="fsBtn" title="Full screen">⛶ Full screen</button>
+  </div>
+</header>
+
+<!-- Start -->
+<section id="s-start" data-screen class="hero">
+  <div>
+    <h1>Live <span>HSE</span> Quiz</h1>
+    <p>Timed team quiz on KOC HSSE procedures. Participants scan a QR code, enter their name, and answer on their own phone or laptop.</p>
+    <div class="facts">
+      <span class="chip"><b>20</b> questions per quiz</span>
+      <span class="chip"><b>40 s</b> per question</span>
+      <span class="chip">Random from a <b id="bankSize">200</b>-question bank</span>
+      <span class="chip">Live leaderboard &amp; podium</span>
+    </div>
+    <button class="btn" id="createBtn">Create quiz session</button>
+    <div id="resumeBox" class="hidden" style="margin-top:16px">
+      <button class="btn ghost small" id="resumeBtn">Resume session <b id="resumeCode"></b></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lobby -->
+<section id="s-lobby" data-screen class="wrap hidden">
+  <div class="lobby">
+    <div class="card joinbox">
+      <h2>Scan to join</h2>
+      <div class="muted">Point your phone camera at the code</div>
+      <div id="qr"></div>
+      <div class="muted">or open the link and enter room code</div>
+      <div class="code" id="bigCode">——————</div>
+      <div class="url" id="joinUrl"></div>
+    </div>
+    <div class="card players">
+      <div class="players-head">
+        <h2><span id="pCount">0</span> participant<span id="pPlural">s</span> joined</h2>
+        <button class="btn" id="presentBtn" disabled>▶ Present</button>
+      </div>
+      <div class="namegrid" id="names"></div>
+      <div class="empty" id="noNames">Waiting for participants to scan the QR code…</div>
+    </div>
+  </div>
+</section>
+
+<!-- Question / Reveal -->
+<section id="s-question" data-screen class="wrap hidden">
+  <div class="qlayout">
+    <div>
+      <div class="qhead">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <span class="chip">Question <b id="qNum">1</b> of <b id="qTotal">20</b></span>
+            <span class="chip" id="qRef">KOC.SA.000</span>
+            <span class="chip"><b id="answered">0</b>/<b id="answerable">0</b> answered</span>
+          </div>
+          <div class="progress-dots" id="dots"></div>
+        </div>
+        <div class="timer" id="timer">
+          <svg width="104" height="104" viewBox="0 0 104 104">
+            <circle cx="52" cy="52" r="46" stroke="#27425f" stroke-width="10" fill="none"/>
+            <circle id="timerArc" cx="52" cy="52" r="46" stroke="#f5b301" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="0"/>
+          </svg>
+          <div class="num" id="timerNum">40</div>
+        </div>
+      </div>
+      <div class="qtext" id="qText"></div>
+      <div class="options" id="opts"></div>
+      <div class="source hidden" id="qSource"></div>
+      <div class="controls">
+        <button class="btn" id="nextBtn">Next question ▶</button>
+        <button class="btn ghost" id="endBtn">End question now</button>
+        <button class="btn ghost hidden" id="finishBtn">Show winners now</button>
+      </div>
+    </div>
+    <aside class="card board">
+      <h3>Live leaderboard</h3>
+      <div class="sub" id="boardSub">Scores update as answers arrive</div>
+      <div class="rows" id="board"></div>
+    </aside>
+  </div>
+</section>
+
+<!-- Final -->
+<section id="s-final" data-screen class="wrap final hidden">
+  <div class="chip">Quiz complete</div>
+  <h1>🏆 Our HSE Champions</h1>
+  <div class="muted" id="finalSub"></div>
+  <div class="podium" id="podium"></div>
+  <div class="controls" style="justify-content:center">
+    <button class="btn" id="againBtn">Play again with new questions</button>
+    <button class="btn ghost" id="csvBtn">Download results (CSV)</button>
+    <button class="btn ghost" id="newRoomBtn">New session</button>
+  </div>
+  <div class="card fulltable" style="margin-top:26px">
+    <h3 style="margin-top:0">Full ranking</h3>
+    <div class="rows" id="finalBoard"></div>
+  </div>
+</section>
+
+<script src="qrcode.js"></script>
+<script src="common.js"></script>
+<script src="host.js"></script>
+</body>
+</html>
