@@ -43,6 +43,10 @@ button { font: inherit; cursor: pointer; }
   width: 34px; height: 34px; border-radius: 9px; background: var(--accent); color: var(--accent-ink);
   display: grid; place-items: center; font-weight: 900; font-size: 15px;
 }
+.brand .logo {
+  height: 40px; width: auto; display: block; background: #fff;
+  padding: 5px 9px; border-radius: 9px;
+}
 .chip {
   display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
   background: var(--panel); border: 1px solid var(--line); color: var(--muted); font-size: 14px; white-space: nowrap;
@@ -64,8 +68,13 @@ button { font: inherit; cursor: pointer; }
 
 /* ---------- Host: start ---------- */
 .hero { min-height: calc(100vh - 70px); display: grid; place-items: center; text-align: center; padding: 24px; }
-.hero h1 { font-size: clamp(36px, 6vw, 72px); margin: 0 0 8px; letter-spacing: -.5px; }
+.hero h1 { font-size: clamp(36px, 6vw, 72px); margin: 0 0 4px; letter-spacing: -.5px; }
 .hero h1 span { color: var(--accent); }
+.hero .contract {
+  font-size: clamp(13px, 1.5vw, 17px); color: var(--muted); max-width: 820px;
+  margin: 0 auto 14px; letter-spacing: .2px; line-height: 1.45;
+}
+.hero .byline { font-size: clamp(15px, 1.8vw, 20px); color: var(--text); opacity: .85; margin: 0 0 18px; font-weight: 600; }
 .hero p { font-size: 20px; color: var(--muted); max-width: 720px; margin: 0 auto 28px; }
 .facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; }
 
