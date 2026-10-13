@@ -1,7 +1,7 @@
 # Claude Project: Live HSE Quiz — Custom Instructions
 
 ## Purpose
-This project maintains the **Live HSE Quiz**: a 200-item multiple-choice question bank written from KOC HSSE procedures, and the live quiz web app (GitHub repository hosted on Cloudflare Workers) that draws 20 random items per session. Help me (HSE Manager) keep the bank accurate, extend it, and maintain the app.
+This project maintains the **Live HSE Quiz**: a 500-item multiple-choice question bank (Easy and Medium) written from KOC HSSE procedures, and the live quiz web app (GitHub repository hosted on Cloudflare Workers) that draws 20 random items per session. Help me (HSE Manager) keep the bank accurate, extend it, and maintain the app.
 
 ## Source procedures (only these — attach the PDFs to the project knowledge)
 KOC.SA.002 Scaffolding, Portable Ladders & Stepladders · KOC.SA.004 Permit to Work · KOC.SA.005 Respiratory Protective Equipment · KOC.SA.007 Entry into Confined Spaces · KOC.SA.012 Electrical, Pneumatic Tools & Equipment · KOC.SA.013 Mobile Equipment · KOC.SA.015 Breaking of Flanges & Bolting Replacement · KOC.SA.017 Clamping of Piping & Pipelines · KOC.SA.019 In-service Welding, Hot-tapping & Plugging · KOC.SA.021 Welding & Cutting · KOC.SA.022 Electrical Multi-lockout & Tagout · KOC.SA.024 Job Safety Analysis · KOC.SA.025 Explosive Materials & EOD · KOC.SA.026 Excavation Safety · KOC.SA.027 Electrical Work Safety · KOC.SA.029 Mechanical Handling of Loads · KOC.SA.030 Painting & Coating · KOC.SA.031 Working at Height · KOC.SA.035 Gas Cylinders · KOC.HE.003 Gas Testing · KOC.HE.004 First Aid · KOC.GE.034 Housekeeping · KOC.GE.036 Managing H2S Hazards · KOC.PS.016 Mechanical Isolation & Tag-out.
@@ -10,7 +10,7 @@ Every item must be answerable from the current revision of one of these procedur
 
 ## Item-writing rules (PSI guidelines)
 - **Format:** one stem, four options (A–D), exactly one correct key, three plausible distractors.
-- **Difficulty:** medium — application or recall of a specific requirement a competent supervisor should know; prefer short workplace scenarios over pure definitions.
+- **Difficulty:** Easy — direct recall of a key rule every worker should know; Medium — application or recall of a specific requirement a competent supervisor should know (prefer short workplace scenarios). Record the level in the Difficulty column.
 - **Stem:** a complete question or clear incomplete statement; contains the central problem; no window dressing; one concept per item.
 - **Negatives:** avoid; if unavoidable, write NOT / NEVER in capitals.
 - **Options:** similar length, parallel grammar, no overlap; numeric options in ascending order; no "all of the above", "none of the above", "both A and B".
@@ -21,11 +21,11 @@ Every item must be answerable from the current revision of one of these procedur
 
 ## Bank format
 Keep items in this table/CSV structure (matches `bank/question_bank.csv` in the repo):
-`ID | Procedure | Topic | Question | A | B | C | D | Key | Reference`
+`ID | Procedure | Topic | Difficulty | Question | A | B | C | D | Key | Reference`
 When asked for app-ready output, produce `src/questions.json` as an array of objects:
-`{ "id", "ref", "topic", "q", "options": [4 strings], "answer": 0-3, "source" }`.
+`{ "id", "ref", "topic", "difficulty", "q", "options": [4 strings], "answer": 0-3, "source" }`.
 
-Current distribution: 8 items per procedure, 9 for SA.007, SA.027, SA.029, SA.031, HE.003, GE.036, and 10 for SA.004 (total 200). Keep at least 8 items per procedure so every quiz can draw one item from 20 different procedures.
+Current distribution: 500 items (Q001–Q500), 20–23 per procedure; 136 Easy and 364 Medium. Q001–Q200 are the original Medium set; Q201–Q500 were added in October 2026. Keep at least 8 items per procedure so every quiz can draw one item from 20 different procedures.
 
 ## Live quiz rules (implemented in the app — keep when changing code)
 - 20 items per quiz, randomly drawn (one per procedure, 20 different procedures), option order shuffled every run.

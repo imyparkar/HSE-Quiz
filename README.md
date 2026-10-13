@@ -2,7 +2,7 @@
 
 A live, timed, multiplayer quiz on KOC HSSE procedures. The presenter projects the quiz; participants scan a QR code, enter their name and answer on their own phone or laptop.
 
-- 20 questions per quiz, drawn at random from a 200-question bank (24 KOC procedures), with option order shuffled every run
+- 20 questions per quiz, drawn at random from a 500-question bank (24 KOC procedures, Easy and Medium), with option order shuffled every run
 - 40 seconds per question; no answer = no points
 - One question at a time, shown on the presenter screen and every participant's device
 - Live leaderboard that updates as each answer arrives
@@ -72,7 +72,7 @@ Change the numbers at the top of `src/worker.js` (`SETTINGS`) if you want a diff
 
 ## Editing the question bank
 
-1. Open `bank/question_bank.csv` in Excel, edit or add rows (columns: ID, Procedure, Topic, Question, A, B, C, D, Key, Reference). Save as CSV (UTF-8).
+1. Open `bank/question_bank.csv` in Excel, edit or add rows (columns: ID, Procedure, Topic, Difficulty, Question, A, B, C, D, Key, Reference). Save as CSV (UTF-8).
 2. Run `node scripts/csv-to-json.mjs` to rebuild `src/questions.json` — or ask Claude in the "Live HSE Quiz" project to produce the new `questions.json`.
 3. Commit to GitHub; Cloudflare redeploys.
 
