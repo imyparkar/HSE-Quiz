@@ -18,22 +18,59 @@
   </div>
 </header>
 
-<!-- Start -->
-<section id="s-start" data-screen class="hero">
-  <div>
+<!-- Start: choose topics + difficulty, then create a session -->
+<section id="s-start" data-screen class="setup">
+  <div class="setup-head">
     <div class="contract">KOC Contract # 23060107 – Comprehensive Maintenance and Operational Support for Gas Facilities in North and West Kuwait Areas</div>
     <h1>Live <span>HSE</span> Quiz</h1>
     <div class="byline">by NBTC HSE Team</div>
-    <p>Timed team quiz on KOC HSSE procedures. Participants scan a QR code, enter their name, and answer on their own phone or laptop.</p>
     <div class="facts">
-      <span class="chip"><b>20</b> questions per quiz</span>
+      <span class="chip">Up to <b id="factQ">20</b> questions per quiz</span>
       <span class="chip"><b>40 s</b> per question</span>
-      <span class="chip">Random from a <b id="bankSize">200</b>-question bank</span>
+      <span class="chip"><b id="bankSize">500</b> questions in bank</span>
       <span class="chip">Live leaderboard &amp; podium</span>
     </div>
-    <button class="btn" id="createBtn">Create quiz session</button>
-    <div id="resumeBox" class="hidden" style="margin-top:16px">
-      <button class="btn ghost small" id="resumeBtn">Resume session <b id="resumeCode"></b></button>
+  </div>
+
+  <div class="setup-grid">
+    <div class="card panel">
+      <div class="panel-head">
+        <div>
+          <div class="step-no">1</div>
+          <h2>Choose topics</h2>
+          <div class="muted small"><b id="selCount">24</b> of 24 procedures selected</div>
+        </div>
+        <div class="panel-actions">
+          <button class="btn ghost small" id="selAll" type="button">Select all</button>
+          <button class="btn ghost small" id="selNone" type="button">Clear</button>
+        </div>
+      </div>
+      <div class="topics" id="topics" role="group" aria-label="Procedures">
+        <div class="muted">Loading procedures…</div>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="card panel">
+        <div class="step-no">2</div>
+        <h2>Difficulty level</h2>
+        <div class="levels" id="levels" role="radiogroup" aria-label="Difficulty level">
+          <label class="level"><input type="radio" name="lvl" value="easy"><span><b>Easy</b><small>Direct recall of key requirements</small></span><em id="cntEasy">–</em></label>
+          <label class="level"><input type="radio" name="lvl" value="medium"><span><b>Medium</b><small>Workplace scenarios and specific limits</small></span><em id="cntMedium">–</em></label>
+          <label class="level"><input type="radio" name="lvl" value="default" checked><span><b>Default</b><small>Mix of easy and medium questions</small></span><em id="cntDefault">–</em></label>
+        </div>
+      </div>
+
+      <div class="card panel go">
+        <div class="step-no">3</div>
+        <h2>Create the session</h2>
+        <div class="pool" id="poolLine">Checking the question bank…</div>
+        <div class="pool-warn hidden" id="poolWarn"></div>
+        <button class="btn wide" id="createBtn" disabled>Create quiz session</button>
+        <div id="resumeBox" class="hidden" style="margin-top:12px">
+          <button class="btn ghost small wide" id="resumeBtn">Resume session <b id="resumeCode"></b></button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -54,6 +91,7 @@
         <h2><span id="pCount">0</span> participant<span id="pPlural">s</span> joined</h2>
         <button class="btn" id="presentBtn" disabled>▶ Present</button>
       </div>
+      <div class="cfgline" id="cfgLine"></div>
       <div class="namegrid" id="names"></div>
       <div class="empty" id="noNames">Waiting for participants to scan the QR code…</div>
     </div>
@@ -69,6 +107,7 @@
           <div style="display:flex;gap:10px;flex-wrap:wrap">
             <span class="chip">Question <b id="qNum">1</b> of <b id="qTotal">20</b></span>
             <span class="chip" id="qRef">KOC.SA.000</span>
+            <span class="chip" id="qDiff"></span>
             <span class="chip"><b id="answered">0</b>/<b id="answerable">0</b> answered</span>
           </div>
           <div class="progress-dots" id="dots"></div>

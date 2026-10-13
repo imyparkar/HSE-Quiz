@@ -56,6 +56,7 @@ function render() {
   if (s.phase === "lobby") {
     show("p-lobby"); stopTick();
     $("lobbyCount").textContent = s.playerCount;
+    $("lobbyTotal").textContent = s.total;
     return;
   }
   if (s.phase === "question" || s.phase === "reveal") return renderQuestion();
@@ -90,6 +91,7 @@ function renderQuestion() {
     if (!a) st.innerHTML = `<div class="result none">⏱ No answer — 0 points</div>`;
     else if (a.correct) st.innerHTML = `<div class="result ok">✔ Correct! +${a.points} points</div>`;
     else st.innerHTML = `<div class="result no">✘ Not this time — correct answer: ${LETTERS[q.answer]}</div>`;
+    if (q.source) st.innerHTML += `<div class="pref"><div class="lbl">Reference</div><b>${esc(q.ref)}${q.procedure ? " – " + esc(q.procedure) : ""}</b>${esc(q.source)}</div>`;
     if (s.me) st.innerHTML += `<div class="stat"><div><b>${s.me.rank ?? "–"}</b>rank of ${s.me.of}</div><div><b>${s.me.score.toLocaleString()}</b>points</div></div>`;
   } else {
     st.innerHTML = locked ? `<div class="result none">🔒 Answer locked in — waiting for others…</div>` : "";
