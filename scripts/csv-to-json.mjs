@@ -34,6 +34,7 @@ rows.forEach((r, i) => {
     id: r[col("ID")].trim() || `Q${String(i + 1).padStart(3, "0")}`,
     ref: r[col("Procedure")].trim(),
     topic: r[col("Topic")].trim(),
+    difficulty: col("Difficulty") >= 0 ? (r[col("Difficulty")] || "").trim() : "Medium",
     q: r[col("Question")].trim(),
     options: ["A", "B", "C", "D"].map((L) => (r[col(L)] || "").trim()),
     answer: "ABCD".indexOf(key),
