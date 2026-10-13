@@ -43,18 +43,86 @@ function shuffle(arr) {
   return a;
 }
 
-// Pick N questions: first spread across as many different procedures as possible,
-// then fill any remainder at random. Options are shuffled for every quiz run.
-function drawQuestions(n) {
+// The 24 KOC procedures the bank is written from (shown as topics on the presenter page).
+const PROCEDURES = [
+  { ref: "KOC.SA.002", name: "Scaffolding, Portable Ladders & Stepladders" },
+  { ref: "KOC.SA.004", name: "Permit to Work" },
+  { ref: "KOC.SA.005", name: "Respiratory Protective Equipment" },
+  { ref: "KOC.SA.007", name: "Entry into Confined Spaces" },
+  { ref: "KOC.SA.012", name: "Electrical, Pneumatic Tools & Equipment" },
+  { ref: "KOC.SA.013", name: "Mobile Equipment" },
+  { ref: "KOC.SA.015", name: "Breaking of Flanges & Bolting Replacement" },
+  { ref: "KOC.SA.017", name: "Clamping of Piping & Pipelines" },
+  { ref: "KOC.SA.019", name: "In-service Welding, Hot-tapping & Plugging" },
+  { ref: "KOC.SA.021", name: "Welding & Cutting" },
+  { ref: "KOC.SA.022", name: "Electrical Multi-lockout & Tagout" },
+  { ref: "KOC.SA.024", name: "Job Safety Analysis" },
+  { ref: "KOC.SA.025", name: "Explosive Materials & EOD" },
+  { ref: "KOC.SA.026", name: "Excavation Safety" },
+  { ref: "KOC.SA.027", name: "Electrical Work Safety" },
+  { ref: "KOC.SA.029", name: "Mechanical Handling of Loads" },
+  { ref: "KOC.SA.030", name: "Painting & Coating" },
+  { ref: "KOC.SA.031", name: "Working at Height" },
+  { ref: "KOC.SA.035", name: "Gas Cylinders" },
+  { ref: "KOC.HE.003", name: "Gas Testing" },
+  { ref: "KOC.HE.004", name: "First Aid" },
+  { ref: "KOC.GE.034", name: "Housekeeping" },
+  { ref: "KOC.GE.036", name: "Managing H2S Hazards" },
+  { ref: "KOC.PS.016", name: "Mechanical Isolation & Tag-out" },
+];
+const PROC_NAME = Object.fromEntries(PROCEDURES.map((p) => [p.ref, p.name]));
+
+// Difficulty choices on the presenter page. "default" = mixed Easy + Medium.
+const DIFFICULTIES = {
+  easy: { label: "Easy", match: (q) => q.difficulty === "Easy" },
+  medium: { label: "Medium", match: (q) => q.difficulty === "Medium" },
+  default: { label: "Default (mixed)", match: () => true },
+};
+
+// Validate a presenter's selection; anything unknown falls back to "all topics, default".
+function normaliseConfig(raw) {
+  const known = new Set(PROCEDURES.map((p) => p.ref));
+  let refs = Array.isArray(raw?.refs) ? [...new Set(raw.refs.filter((r) => known.has(r)))] : [];
+  if (!refs.length) refs = PROCEDURES.map((p) => p.ref);
+  refs.sort((a, b) => PROCEDURES.findIndex((p) => p.ref === a) - PROCEDURES.findIndex((p) => p.ref === b));
+  const difficulty = DIFFICULTIES[raw?.difficulty] ? raw.difficulty : "default";
+  return { refs, difficulty };
+}
+
+function questionPool(config) {
+  const refs = new Set(config.refs);
+  const match = DIFFICULTIES[config.difficulty].match;
+  return BANK.filter((q) => refs.has(q.ref) && match(q));
+}
+
+function catalog() {
+  return PROCEDURES.map((p) => {
+    const items = BANK.filter((q) => q.ref === p.ref);
+    return {
+      ref: p.ref,
+      name: p.name,
+      easy: items.filter((q) => q.difficulty === "Easy").length,
+      medium: items.filter((q) => q.difficulty === "Medium").length,
+    };
+  });
+}
+
+// Pick N questions from the pool, spread as evenly as possible across the selected
+// procedures (round-robin: one from each procedure per round, procedures in random order).
+// With 20+ procedures selected this gives one question each from 20 different procedures.
+// Options are shuffled for every quiz run.
+function drawQuestions(n, pool) {
   const byRef = {};
-  for (const q of BANK) (byRef[q.ref] ||= []).push(q);
-  // One random question from each procedure (in random order) ...
-  const firstPass = shuffle(Object.keys(byRef)).map((r) => shuffle(byRef[r])[0]);
-  let picked = firstPass.slice(0, n);
-  // ... then, if more are needed than there are procedures, fill from the rest.
-  if (picked.length < n) {
-    const ids = new Set(picked.map((q) => q.id));
-    picked = picked.concat(shuffle(BANK.filter((q) => !ids.has(q.id))).slice(0, n - picked.length));
+  for (const q of pool) (byRef[q.ref] ||= []).push(q);
+  const decks = Object.fromEntries(Object.entries(byRef).map(([r, qs]) => [r, shuffle(qs)]));
+  const picked = [];
+  while (picked.length < n) {
+    const refs = shuffle(Object.keys(decks).filter((r) => decks[r].length));
+    if (!refs.length) break;
+    for (const r of refs) {
+      if (picked.length >= n) break;
+      picked.push(decks[r].pop());
+    }
   }
   return shuffle(picked).map((q) => {
     const order = shuffle([0, 1, 2, 3]);
@@ -62,6 +130,7 @@ function drawQuestions(n) {
       id: q.id,
       ref: q.ref,
       topic: q.topic,
+      difficulty: q.difficulty,
       q: q.q,
       options: order.map((i) => q.options[i]),
       answer: order.indexOf(q.answer),
@@ -70,17 +139,36 @@ function drawQuestions(n) {
   });
 }
 
+function configSummary(config) {
+  const pool = questionPool(config);
+  return {
+    refs: config.refs,
+    topics: config.refs.map((r) => ({ ref: r, name: PROC_NAME[r] })),
+    allTopics: config.refs.length === PROCEDURES.length,
+    difficulty: config.difficulty,
+    difficultyLabel: DIFFICULTIES[config.difficulty].label,
+    poolSize: pool.length,
+    numQuestions: Math.min(SETTINGS.numQuestions, pool.length),
+  };
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
     if (url.pathname === "/api/rooms" && request.method === "POST") {
+      let body = {};
+      try { body = await request.json(); } catch {}
+      const config = normaliseConfig(body);
+      if (!questionPool(config).length) {
+        return json({ error: "No questions match the selected topics and difficulty. Select more topics or a different level." }, 400);
+      }
       for (let attempt = 0; attempt < 5; attempt++) {
         const code = randomCode();
         const stub = env.QUIZ_ROOM.get(env.QUIZ_ROOM.idFromName(code));
         const res = await stub.fetch("https://room/init", {
           method: "POST",
-          body: JSON.stringify({ code }),
+          body: JSON.stringify({ code, config }),
         });
         if (res.ok) return json(await res.json());
       }
@@ -98,6 +186,10 @@ export default {
     if (j) return Response.redirect(`${url.origin}/play.html?room=${j[1].toUpperCase()}`, 302);
 
     if (url.pathname === "/api/health") return json({ ok: true, questionsInBank: BANK.length });
+
+    if (url.pathname === "/api/catalog") {
+      return json({ total: BANK.length, numQuestions: SETTINGS.numQuestions, secondsPerQuestion: SETTINGS.secondsPerQuestion, procedures: catalog() });
+    }
 
     return env.ASSETS.fetch(request);
   },
@@ -117,14 +209,21 @@ export class QuizRoom {
     await this.ctx.storage.put("s", this.s);
   }
 
+  // Rooms created before topic selection existed have no config: treat as all topics, default level.
+  config() {
+    if (!this.s.config) this.s.config = normaliseConfig(null);
+    return this.s.config;
+  }
+
   async fetch(request) {
     const url = new URL(request.url);
 
     if (url.pathname === "/init") {
       if (this.s) return new Response("exists", { status: 409 });
-      const { code } = await request.json();
+      const { code, config } = await request.json();
       this.s = {
         code,
+        config: normaliseConfig(config),
         hostKey: randomToken(),
         createdAt: Date.now(),
         phase: "lobby",
@@ -184,7 +283,12 @@ export class QuizRoom {
       case "start":
         if (s.phase !== "lobby") break;
         if (!Object.keys(s.players).length) { ws.send(JSON.stringify({ t: "error", message: "Wait for at least one participant to join." })); break; }
-        s.questions = drawQuestions(SETTINGS.numQuestions);
+        {
+          const cfg = this.config();
+          const pool = questionPool(cfg);
+          if (!pool.length) { ws.send(JSON.stringify({ t: "error", message: "No questions match this session's topics and difficulty." })); break; }
+          s.questions = drawQuestions(SETTINGS.numQuestions, pool);
+        }
         s.round += 1;
         await this.openQuestion(0);
         return;
@@ -346,16 +450,17 @@ export class QuizRoom {
       phase: s.phase,
       settings: { numQuestions: SETTINGS.numQuestions, secondsPerQuestion: SETTINGS.secondsPerQuestion },
       qIndex: s.qIndex,
-      total: s.questions.length || SETTINGS.numQuestions,
+      total: s.questions.length || configSummary(this.config()).numQuestions,
       qStart: s.qStart,
       qDeadline: s.qDeadline,
+      config: configSummary(this.config()),
       players: ranking,
       answeredPids: q ? Object.entries(s.players).filter(([, p]) => p.answers[s.qIndex]).map(([pid]) => pid) : [],
       lastPoints: q ? Object.fromEntries(Object.entries(s.players).filter(([, p]) => p.answers[s.qIndex]).map(([pid, p]) => [pid, p.answers[s.qIndex].points])) : {},
       bankSize: BANK.length,
     };
     if (q && s.phase !== "lobby") {
-      view.question = { ref: q.ref, topic: q.topic, q: q.q, options: q.options };
+      view.question = { ref: q.ref, procedure: PROC_NAME[q.ref] || "", topic: q.topic, difficulty: q.difficulty, q: q.q, options: q.options };
       if (showAnswer) {
         view.question.answer = q.answer;
         view.question.source = q.source;
@@ -386,7 +491,7 @@ export class QuizRoom {
       room: s.code,
       phase: s.phase,
       qIndex: s.qIndex,
-      total: s.questions.length || SETTINGS.numQuestions,
+      total: s.questions.length || configSummary(this.config()).numQuestions,
       qStart: s.qStart,
       qDeadline: s.qDeadline,
       me: p ? { name: p.name, score: p.score, rank: me?.rank, of: ranking.length } : null,
@@ -397,7 +502,11 @@ export class QuizRoom {
       const mine = p?.answers[s.qIndex];
       view.myAnswer = mine ? { choice: mine.choice } : null;
       if (s.phase === "reveal") {
+        // Reference is sent only once the question has closed (time up or everyone answered),
+        // so nobody can read it and pass the answer on while others are still answering.
         view.question.answer = q.answer;
+        view.question.procedure = PROC_NAME[q.ref] || "";
+        view.question.source = q.source;
         view.myAnswer = mine ? { choice: mine.choice, correct: mine.correct, points: mine.points } : null;
       }
     }
