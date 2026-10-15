@@ -81,11 +81,14 @@ const saved = () => {
 };
 
 function joinLink(code) { return `${location.origin}/play.html?room=${code}`; }
+let qrModel = null;      // the generated QR code, reused to draw the shareable image
+let joinCode = "";
 
 function renderQR(text) {
   const qr = qrcode(0, "M");
   qr.addData(text);
   qr.make();
+  qrModel = qr;
   $("qr").innerHTML = qr.createSvgTag({ cellSize: 8, margin: 0, scalable: true });
 }
 
@@ -114,6 +117,7 @@ function connect(code, key) {
   $("roomCode").textContent = code;
   $("roomChip").classList.remove("hidden");
   $("bigCode").textContent = code;
+  joinCode = code;
   $("joinUrl").textContent = joinLink(code);
   renderQR(joinLink(code));
   let failures = 0;
@@ -273,6 +277,107 @@ function downloadCSV() {
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
+
+
+// ---------- Share the QR card (link + image) ----------
+function shareText() { return `Join the Live HSE Quiz by NBTC HSE Team — room code ${joinCode}`; }
+
+function loadImg(src) {
+  return new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
+}
+function spacedText(ctx, text, cx, y, spacing) {
+  // centre text with letter spacing (canvas letterSpacing is not supported everywhere)
+  const widths = [...text].map((ch) => ctx.measureText(ch).width);
+  const total = widths.reduce((a, b) => a + b, 0) + spacing * (text.length - 1);
+  let x = cx - total / 2;
+  ctx.textAlign = "left";
+  [...text].forEach((ch, i) => { ctx.fillText(ch, x, y); x += widths[i] + spacing; });
+  ctx.textAlign = "center";
+}
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+}
+// Draws the whole join card — logo, title, QR, room code and link — as a 1080×1350 PNG.
+async function shareImageBlob() {
+  if (!qrModel) return null;
+  const W = 1080, H = 1350, url = joinLink(joinCode);
+  const font = getComputedStyle(document.body).fontFamily;
+  const c = document.createElement("canvas"); c.width = W; c.height = H;
+  const ctx = c.getContext("2d");
+  const bg = ctx.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0, "#eaf3fe"); bg.addColorStop(.55, "#f7f7f9"); bg.addColorStop(1, "#fdf1e6");
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = "#ffffff"; roundRect(ctx, 60, 60, W - 120, H - 120, 56); ctx.fill();
+  ctx.strokeStyle = "#e6e6e8"; ctx.lineWidth = 2; ctx.stroke();
+  const logo = await loadImg("nbtc-logo.png");
+  if (logo) { const lh = 64, lw = logo.width * lh / logo.height; ctx.drawImage(logo, (W - lw) / 2, 120, lw, lh); }
+  ctx.textAlign = "center"; ctx.textBaseline = "alphabetic"; ctx.fillStyle = "#1d1d1f";
+  ctx.font = `600 64px ${font}`; ctx.fillText("Live HSE Quiz", W / 2, 268);
+  ctx.fillStyle = "#707070"; ctx.font = `400 32px ${font}`; ctx.fillText("Scan to join", W / 2, 318);
+  // QR code
+  const n = qrModel.getModuleCount(), size = 600, cell = Math.floor(size / n), qs = cell * n;
+  const qx = Math.round((W - qs) / 2), qy = 370;
+  ctx.fillStyle = "#ffffff"; ctx.fillRect(qx - 24, qy - 24, qs + 48, qs + 48);
+  ctx.fillStyle = "#000000";
+  for (let r = 0; r < n; r++) for (let col = 0; col < n; col++) if (qrModel.isDark(r, col)) ctx.fillRect(qx + col * cell, qy + r * cell, cell, cell);
+  const below = qy + qs + 96;
+  ctx.fillStyle = "#707070"; ctx.font = `400 28px ${font}`; ctx.fillText("or open the link and enter room code", W / 2, below);
+  ctx.fillStyle = "#1d1d1f"; ctx.font = `600 104px ${font}`; spacedText(ctx, joinCode, W / 2, below + 120, 22);
+  ctx.fillStyle = "#0066cc"; let fs = 30; ctx.font = `500 ${fs}px ${font}`;
+  while (ctx.measureText(url).width > W - 200 && fs > 18) { fs -= 1; ctx.font = `500 ${fs}px ${font}`; }
+  ctx.fillText(url, W / 2, below + 186);
+  return new Promise((res) => c.toBlob(res, "image/png"));
+}
+async function shareFile() {
+  const blob = await shareImageBlob();
+  return blob ? new File([blob], `HSE-Quiz-${joinCode}.png`, { type: "image/png" }) : null;
+}
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); return true; } catch {}
+  try {
+    const ta = document.createElement("textarea"); ta.value = t; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select(); const ok = document.execCommand("copy"); ta.remove(); return ok;
+  } catch { return false; }
+}
+function setShareMenu(open) {
+  $("shareMenu").classList.toggle("hidden", !open);
+  $("shareBtn").setAttribute("aria-expanded", String(open));
+  if (open) $("shareMenu").querySelector("button:not(.hidden)")?.focus();
+}
+async function doShare(kind) {
+  const url = joinLink(joinCode), text = shareText();
+  setShareMenu(false);
+  try {
+    if (kind === "native") {
+      const file = await shareFile();
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) await navigator.share({ title: "Live HSE Quiz", text: `${text}\n${url}`, files: [file] });
+      else await navigator.share({ title: "Live HSE Quiz", text, url });
+    } else if (kind === "copy") {
+      toast((await copyText(url)) ? "Join link copied" : "Could not copy — select the link below the code");
+    } else if (kind === "copyimg") {
+      const blob = await shareImageBlob();
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+      toast("QR image copied — paste it into an email, chat or slide");
+    } else if (kind === "download") {
+      const blob = await shareImageBlob();
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `HSE-Quiz-${joinCode}.png`;
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+    } else if (kind === "whatsapp") {
+      window.open(`https://wa.me/?text=${encodeURIComponent(`${text}\n${url}`)}`, "_blank", "noopener");
+    } else if (kind === "email") {
+      location.href = `mailto:?subject=${encodeURIComponent("Join the Live HSE Quiz")}&body=${encodeURIComponent(`${text}\n\n${url}\n\nOpen the link on your phone, enter your name and wait for the first question.`)}`;
+    }
+  } catch (e) {
+    if (e && e.name !== "AbortError") toast("Sharing is not available here — use Copy link instead");
+  }
+}
+if (!navigator.share) $("shareNative").classList.add("hidden");
+if (!(navigator.clipboard && window.ClipboardItem)) $("shareCopyImg").classList.add("hidden");
+$("shareBtn").onclick = (e) => { e.stopPropagation(); setShareMenu($("shareMenu").classList.contains("hidden")); };
+$("shareMenu").addEventListener("click", (e) => { const b = e.target.closest("button[data-share]"); if (b) doShare(b.dataset.share); });
+document.addEventListener("click", (e) => { if (!e.target.closest(".share-wrap")) setShareMenu(false); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("shareMenu").classList.contains("hidden")) { setShareMenu(false); $("shareBtn").focus(); } });
 
 // ---- Wire up ----
 $("createBtn").onclick = createRoom;

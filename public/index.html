@@ -91,6 +91,21 @@
 <section id="s-lobby" data-screen class="wrap hidden">
   <div class="lobby">
     <div class="card joinbox">
+      <div class="share-wrap">
+        <button class="share-btn" id="shareBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="shareMenu" title="Share the join link or QR code">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7.5 7.5 12 3l4.5 4.5"/><path d="M8 10H6.5A1.5 1.5 0 0 0 5 11.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5H16"/></svg>
+          <span>Share</span>
+        </button>
+        <div class="share-menu hidden" id="shareMenu" role="menu" aria-label="Share options">
+          <button type="button" role="menuitem" data-share="native" id="shareNative">Share via…</button>
+          <button type="button" role="menuitem" data-share="copy">Copy link</button>
+          <button type="button" role="menuitem" data-share="copyimg" id="shareCopyImg">Copy QR image</button>
+          <button type="button" role="menuitem" data-share="download">Download QR image</button>
+          <div class="share-sep" role="separator"></div>
+          <button type="button" role="menuitem" data-share="whatsapp">WhatsApp</button>
+          <button type="button" role="menuitem" data-share="email">Email</button>
+        </div>
+      </div>
       <h2>Scan to join</h2>
       <div class="muted">Point your phone camera at the code</div>
       <div id="qr"></div>
