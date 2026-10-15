@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5f7">
 <title>Live HSE Quiz – Presenter</title>
 <meta name="description" content="Live, timed HSE quiz on KOC HSSE procedures — presenter screen">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5b301'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='900' text-anchor='middle' fill='%231a1300'%3EQ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,50 +22,18 @@
   </div>
 </header>
 
-<!-- Start: welcome + choose topics and difficulty, then create a session (playful storybook theme) -->
+<!-- Start: welcome + choose topics and difficulty, then create a session (light gallery + liquid glass) -->
 <section id="s-start" data-screen class="setup">
   <div class="welcome-hero">
-    <div class="hero-in">
-      <div class="hero-text">
-        <div class="contract">KOC Contract # 23060107 – Comprehensive Maintenance and Operational Support for Gas Facilities in North and West Kuwait Areas</div>
-        <h1>Live HSE Quiz</h1>
-        <div class="byline">by NBTC HSE Team</div>
-        <p class="lead">Pick the procedures, pick the level, and let the room scan in. One question at a time, 40 seconds each, live leaderboard to the finish.</p>
-        <div class="facts">
-          <span class="tag">Up to <b id="factQ">20</b> questions</span>
-          <span class="tag"><b>40 s</b> each</span>
-          <span class="tag"><b id="bankSize">500</b> in bank</span>
-          <span class="tag">Live podium</span>
-        </div>
-      </div>
-      <svg class="hero-art" viewBox="0 0 380 320" role="img" aria-label="Illustration of a safety helmet on a checklist">
-        <!-- clipboard -->
-        <rect x="70" y="58" width="196" height="238" rx="22" fill="#ffffff" stroke="#3c3c3c" stroke-width="6"/>
-        <rect x="128" y="40" width="80" height="38" rx="12" fill="#1cb0f6" stroke="#3c3c3c" stroke-width="6"/>
-        <!-- checklist rows -->
-        <g stroke="#3c3c3c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="98" y="110" width="34" height="34" rx="9" fill="#58cc02"/>
-          <path d="M106 127 l7 7 l13 -15" fill="none" stroke="#ffffff" stroke-width="6"/>
-          <line x1="150" y1="127" x2="236" y2="127"/>
-          <rect x="98" y="166" width="34" height="34" rx="9" fill="#58cc02"/>
-          <path d="M106 183 l7 7 l13 -15" fill="none" stroke="#ffffff" stroke-width="6"/>
-          <line x1="150" y1="183" x2="220" y2="183"/>
-          <rect x="98" y="222" width="34" height="34" rx="9" fill="#ffffff"/>
-          <line x1="150" y1="239" x2="228" y2="239"/>
-        </g>
-        <!-- safety helmet -->
-        <g stroke="#3c3c3c" stroke-width="6" stroke-linejoin="round">
-          <path d="M214 206 c0 -44 30 -74 66 -74 s66 30 66 74 z" fill="#ffc800"/>
-          <path d="M268 134 h24 v72 h-24 z" fill="#ffdf66"/>
-          <rect x="196" y="204" width="168" height="22" rx="11" fill="#ffc800"/>
-        </g>
-        <!-- sparkles -->
-        <g fill="#ff4b4b" stroke="#3c3c3c" stroke-width="4" stroke-linejoin="round">
-          <path d="M40 120 l8 -18 l8 18 l18 8 l-18 8 l-8 18 l-8 -18 l-18 -8 z"/>
-        </g>
-        <circle cx="318" cy="92" r="10" fill="#ce82ff" stroke="#3c3c3c" stroke-width="4"/>
-        <circle cx="48" cy="250" r="7" fill="#1cb0f6" stroke="#3c3c3c" stroke-width="4"/>
-      </svg>
+    <div class="contract">KOC Contract # 23060107 – Comprehensive Maintenance and Operational Support for Gas Facilities in North and West Kuwait Areas</div>
+    <h1>Live HSE Quiz</h1>
+    <div class="byline">by NBTC HSE Team</div>
+    <p class="lead">Choose the procedures and the level. Participants scan in, answer on their phones, and the leaderboard updates live.</p>
+    <div class="facts glass">
+      <span>Up to <b id="factQ">20</b> questions</span>
+      <span><b>40 s</b> per question</span>
+      <span><b id="bankSize">500</b> in the bank</span>
+      <span>Live podium</span>
     </div>
   </div>
 
@@ -157,8 +126,8 @@
         </div>
         <div class="timer" id="timer">
           <svg width="104" height="104" viewBox="0 0 104 104">
-            <circle cx="52" cy="52" r="46" stroke="#27425f" stroke-width="10" fill="none"/>
-            <circle id="timerArc" cx="52" cy="52" r="46" stroke="#f5b301" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="0"/>
+            <circle cx="52" cy="52" r="46" stroke="rgba(29,29,31,.08)" stroke-width="9" fill="none"/>
+            <circle id="timerArc" cx="52" cy="52" r="46" stroke="#0071e3" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="0"/>
           </svg>
           <div class="num" id="timerNum">40</div>
         </div>

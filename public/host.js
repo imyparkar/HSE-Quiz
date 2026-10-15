@@ -156,7 +156,7 @@ function renderLobby() {
   if (c) {
     const topics = c.allTopics ? "All 24 topics" : c.topics.length <= 4 ? c.topics.map((t) => esc(t.ref)).join(", ") : `${c.topics.length} topics`;
     const title = c.topics.map((t) => `${t.ref} ${t.name}`).join("\n");
-    $("cfgLine").innerHTML = `<span class="chip" title="${esc(title)}">📚 ${topics}</span><span class="chip">🎯 ${esc(c.difficultyLabel)}</span><span class="chip"><b>${c.numQuestions}</b> questions</span>`;
+    $("cfgLine").innerHTML = `<span class="chip" title="${esc(title)}">Topics <b>${topics}</b></span><span class="chip">Level <b>${esc(c.difficultyLabel)}</b></span><span class="chip"><b>${c.numQuestions}</b> questions</span>`;
   }
   const sig = ps.map((p) => p.pid + p.online).join("|");
   if (sig !== lastNames) {
@@ -225,7 +225,7 @@ function setTimer(remainingMs, totalS, done) {
   $("timerArc").setAttribute("stroke-dashoffset", String(289 * (1 - frac)));
   $("timerNum").textContent = done ? "0" : Math.max(0, Math.min(totalS, secs));
   $("timer").classList.toggle("low", secs <= 10);
-  $("timerArc").setAttribute("stroke", secs <= 10 ? "#ef4444" : "#f5b301");
+  $("timerArc").setAttribute("stroke", secs <= 10 ? "#e0453a" : "#0071e3");
 }
 
 function startTick() {
