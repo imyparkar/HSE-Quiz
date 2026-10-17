@@ -145,6 +145,29 @@ button { font: inherit; cursor: pointer; color: inherit; }
   font-size: clamp(48px, 7vw, 88px); font-weight: 600; line-height: 1.05; letter-spacing: -0.015em; margin: 0;
   background: linear-gradient(180deg, #1d1d1f 0%, #3a3a3e 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
+/* "Live" in red with a green heartbeat trace running underneath */
+.welcome-hero h1 { padding-bottom: .14em; }
+.welcome-hero h1 .live {
+  position: relative; display: inline-block;
+  color: var(--bad); -webkit-text-fill-color: var(--bad); background: none;
+}
+.welcome-hero h1 .ecg {
+  position: absolute; left: -2%; bottom: -.2em; width: 104%; height: .32em; overflow: visible;
+}
+.welcome-hero h1 .ecg path {
+  fill: none; stroke: var(--good); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 100; stroke-dashoffset: 100;
+  animation: ecgTrace 2.6s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+@keyframes ecgTrace {
+  0% { stroke-dashoffset: 100; opacity: 1; }
+  55% { stroke-dashoffset: 0; opacity: 1; }
+  80% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome-hero h1 .ecg path { stroke-dashoffset: 0; }
+}
 .welcome-hero .byline { font-size: 21px; font-weight: 600; letter-spacing: .01em; color: var(--ink); margin: 10px 0 18px; }
 .welcome-hero .lead { font-size: 19px; color: var(--slate); max-width: 620px; margin: 0 auto 28px; line-height: 1.4; }
 .facts {
